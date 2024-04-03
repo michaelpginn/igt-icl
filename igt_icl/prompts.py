@@ -18,3 +18,8 @@ def hydrate_prompt(path: str, data: Dict):
         prompt_string = prompt_file.read()
         prompt_template = Template(prompt_string)
         return prompt_template.substitute(data)
+
+
+def list_prompt_keys():
+    """Lists all of the available prompt keys"""
+    raise NotImplementedError

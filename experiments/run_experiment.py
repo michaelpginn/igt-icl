@@ -13,7 +13,7 @@ import fire
 project_root = Path(__file__).parent.parent
 sys.path.append(str(project_root))
 
-from igt_icl import eval, llm
+import igt_icl
 
 load_dotenv()
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
@@ -35,7 +35,7 @@ def _eval_dataset(dataset: datasets.Dataset, inference_function: Callable[[Dict]
         predictions.append(prediction)
         total_tokens += tokens_used
 
-    metrics = eval.evaluate_igt(predictions=predictions, references=references)
+    metrics = igt_icl.evaluate_igt(predictions=predictions, references=references)
     metrics["total_tokens"] = total_tokens
     metrics["avg_tokens"] = total_tokens / len(dataset)
     print(metrics)
@@ -89,14 +89,14 @@ def run_experiment(glottocode: str,
             fewshot_examples = retrieval_function(example, glosslm_corpus)
             example["fewshot_examples"] = fewshot_examples
 
-        return llm.run_llm(example,
-                           system_prompt_key=system_prompt_key,
-                           prompt_key=prompt_key,
-                           llm_type=llm_type,
-                           model=model,
-                           api_key=OPENAI_API_KEY,
-                           temperature=temperature,
-                           seed=seed)
+        return igt_icl.run_llm(example,
+                               system_prompt_key=system_prompt_key,
+                               prompt_key=prompt_key,
+                               llm_type=llm_type,
+                               model=model,
+                               api_key=OPENAI_API_KEY,
+                               temperature=temperature,
+                               seed=seed)
 
     # Run evaluation and write to files
     metrics, predictions, references = _eval_dataset(examples, _inference)
