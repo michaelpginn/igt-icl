@@ -34,7 +34,7 @@ You can see the entire list of prompts by running
 igt_icl.list_prompt_keys()
 ```
 
-## Retreival-Augmented Generation
+## Retrieval-Augmented Generation
 `igt-icl` supports RAG for more controllable IGT glossing. There are a number of retrieval strategies implemented, which can be used as follows:
 
 ```python
