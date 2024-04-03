@@ -1,2 +1,2 @@
 from .eval import evaluate_igt
-from .llm import run_llm
+from .llm import gloss_with_llm

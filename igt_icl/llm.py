@@ -68,7 +68,7 @@ def _parse_response(response: str) -> Union[str, List[str]]:
         return matches[0][0]
 
 
-def run_llm(data: Dict, system_prompt_key: str, prompt_key: str, llm_type: str, model: str, api_key: str = None, temperature=1, seed=0) -> Tuple[Union[str, List[str]], int]:
+def gloss_with_llm(data: Dict, system_prompt_key: str, prompt_key: str, llm_type: str, model: str, api_key: str = None, temperature=1, seed=0) -> Tuple[Union[str, List[str]], int]:
     """Actually runs LLM inference on a single example.
 
     Args:

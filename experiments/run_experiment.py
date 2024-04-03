@@ -89,14 +89,14 @@ def run_experiment(glottocode: str,
             fewshot_examples = retrieval_function(example, glosslm_corpus)
             example["fewshot_examples"] = fewshot_examples
 
-        return igt_icl.run_llm(example,
-                               system_prompt_key=system_prompt_key,
-                               prompt_key=prompt_key,
-                               llm_type=llm_type,
-                               model=model,
-                               api_key=OPENAI_API_KEY,
-                               temperature=temperature,
-                               seed=seed)
+        return igt_icl.gloss_with_llm(example,
+                                      system_prompt_key=system_prompt_key,
+                                      prompt_key=prompt_key,
+                                      llm_type=llm_type,
+                                      model=model,
+                                      api_key=OPENAI_API_KEY,
+                                      temperature=temperature,
+                                      seed=seed)
 
     # Run evaluation and write to files
     metrics, predictions, references = _eval_dataset(examples, _inference)
