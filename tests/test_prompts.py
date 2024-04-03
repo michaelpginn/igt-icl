@@ -15,12 +15,30 @@ class TestPrompts(unittest.TestCase):
     }
     prompt_path = os.path.join(dirname, "test_prompt_1.prompt")
     prompt_reference_path = os.path.join(dirname, "test_prompt_1_hydrated.prompt")
+    default_prompt_reference_path = os.path.join(dirname, "test_prompt_base_hydrated.prompt")
 
     def test_hydrate_prompt(self):
         """Test that hydrating prompts works as expected."""
-        hydrated_prompt = prompts.hydrate_prompt(self.prompt_path, self.example_row)
+        prompt = prompts.Prompt(self.prompt_path, prompts.PromptType.SYSTEM)
+        hydrated_prompt = prompt.hydrate(self.example_row)
         with open(self.prompt_reference_path, 'r') as reference:
             self.assertEqual(hydrated_prompt, reference.read())
+
+    def test_default_prompt(self):
+        """Test that we can fetch and hydrate a built-in prompt"""
+        prompt = prompts.Prompt.from_default('base', prompts.PromptType.SYSTEM)
+        assert prompt.required_fields == ['language', 'metalang']
+        hydrated_prompt = prompt.hydrate(self.example_row)
+        with open(self.default_prompt_reference_path, 'r') as reference:
+            self.assertEqual(hydrated_prompt, reference.read())
+
+    def test_list_prompt_keys(self):
+        """Test that we can get a list of the built-in prompt keys"""
+        all_prompts = prompts.list_prompt_keys()
+        assert 'system' in all_prompts
+        assert 'user' in all_prompts
+        assert len(all_prompts['system']) > 0
+        assert len(all_prompts['user']) > 0
 
 
 if __name__ == '__main__':

@@ -9,4 +9,6 @@ You are to output the gloss line of IGT. You should gloss stem/lexical morphemes
 
 Glosses: the gloss line for the transcribed text
 
-Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces.
+Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
+
+$glosslist

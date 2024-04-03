@@ -10,6 +10,8 @@ from tqdm.autonotebook import tqdm
 import json
 import fire
 
+import igt_icl.prompts
+
 project_root = Path(__file__).parent.parent
 sys.path.append(str(project_root))
 
@@ -83,15 +85,17 @@ def run_experiment(glottocode: str,
     print(f"Evaluating {len(examples)} examples in {examples['language'][0]}.")
 
     # Create the appropriate inference function
-    def _inference(example):
+    def _inference(example: Dict):
         if retrieval_function is not None:
             # Run retrieval and add examples to the prompt data payload
             fewshot_examples = retrieval_function(example, glosslm_corpus)
             example["fewshot_examples"] = fewshot_examples
 
         return igt_icl.gloss_with_llm(example,
-                                      system_prompt_key=system_prompt_key,
-                                      prompt_key=prompt_key,
+                                      system_prompt=igt_icl.prompts.default_prompt(
+                                          'base', igt_icl.prompts.PromptType.SYSTEM),
+                                      prompt=igt_icl.prompts.default_prompt(
+                                          'zeroshot', igt_icl.prompts.PromptType.USER),
                                       llm_type=llm_type,
                                       model=model,
                                       api_key=OPENAI_API_KEY,

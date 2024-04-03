@@ -11,12 +11,12 @@ import evaluate
 from torchtext.data.metrics import bleu_score
 
 
-def strip_gloss_punctuation(glosses: str):
+def _strip_gloss_punctuation(glosses: str):
     """Strips any punctuation from gloss string (assuming it is surrounded by spaces)"""
     return re.sub(r"(\s|^)[^\w\s](\s|$)", " ", glosses).strip()
 
 
-def eval_accuracy(pred: List[List[str]], gold: List[List[str]]) -> dict:
+def _eval_accuracy(pred: List[List[str]], gold: List[List[str]]) -> dict:
     """Computes the average and overall accuracy, where predicted labels must be
     in the correct position in the list."""
     total_correct_predictions = 0
@@ -47,7 +47,7 @@ def eval_accuracy(pred: List[List[str]], gold: List[List[str]]) -> dict:
     return {"average_accuracy": average_accuracy, "accuracy": overall_accuracy}
 
 
-def eval_stems_grams(pred: List[List[str]], gold: List[List[str]]) -> dict:
+def _eval_stems_grams(pred: List[List[str]], gold: List[List[str]]) -> dict:
     perf = {
         "stem": {"correct": 0, "pred": 0, "gold": 0},
         "gram": {"correct": 0, "pred": 0, "gold": 0},
@@ -102,36 +102,36 @@ def eval_stems_grams(pred: List[List[str]], gold: List[List[str]]) -> dict:
     return {"stem": stem_perf, "gram": gram_perf}
 
 
-def eval_error_rate(pred: List[str], gold: List[str]) -> float:
+def _eval_error_rate(pred: List[str], gold: List[str]) -> float:
     prediction = ' '.join(pred)
     reference = ' '.join(gold)
     return wer(reference, prediction)
 
 
-def eval_avg_error_rate(pred: List[List[str]], gold: List[List[str]]) -> float:
+def _eval_avg_error_rate(pred: List[List[str]], gold: List[List[str]]) -> float:
     total_error_rate = 0
     for (sample_pred, sample_gold) in zip(pred, gold):
-        total_error_rate += eval_error_rate(sample_pred, sample_gold)
+        total_error_rate += _eval_error_rate(sample_pred, sample_gold)
     avg_error_rate = total_error_rate / len(pred)
     return avg_error_rate
 
 
-def eval_morpheme_glosses(
+def _eval_morpheme_glosses(
     pred_morphemes: List[List[str]], gold_morphemes: List[List[str]]
 ):
     """Evaluates the performance at the morpheme level"""
-    morpheme_eval = eval_accuracy(pred_morphemes, gold_morphemes)
-    class_eval = eval_stems_grams(pred_morphemes, gold_morphemes)
+    morpheme_eval = _eval_accuracy(pred_morphemes, gold_morphemes)
+    class_eval = _eval_stems_grams(pred_morphemes, gold_morphemes)
     bleu = bleu_score(pred_morphemes, [[line] for line in gold_morphemes])
-    mer = eval_avg_error_rate(pred_morphemes, gold_morphemes)
+    mer = _eval_avg_error_rate(pred_morphemes, gold_morphemes)
     return {"morpheme_level": morpheme_eval, "classes": class_eval, "bleu": bleu, "MER": mer}
 
 
-def eval_word_glosses(pred_words: List[List[str]], gold_words: List[List[str]]):
+def _eval_word_glosses(pred_words: List[List[str]], gold_words: List[List[str]]):
     """Evaluates the performance at the morpheme level"""
-    word_eval = eval_accuracy(pred_words, gold_words)
+    word_eval = _eval_accuracy(pred_words, gold_words)
     bleu = bleu_score(pred_words, [[line] for line in gold_words])
-    wer = eval_avg_error_rate(pred_words, gold_words)
+    wer = _eval_avg_error_rate(pred_words, gold_words)
     return {"word_level": word_eval, "bleu": bleu, "WER": wer}
 
 
@@ -148,8 +148,8 @@ def evaluate_igt(
     Returns:
         (Dict): A dictionary of several metrics
     """
-    predictions = [strip_gloss_punctuation(pred) for pred in predictions]
-    references = [strip_gloss_punctuation(g) for g in references]
+    predictions = [_strip_gloss_punctuation(pred) for pred in predictions]
+    references = [_strip_gloss_punctuation(g) for g in references]
 
     pred_words = [pred.split() for pred in predictions]
     gold_words = [gloss.split() for gloss in references]
@@ -162,10 +162,10 @@ def evaluate_igt(
     )
 
     return {
-        **eval_word_glosses(
+        **_eval_word_glosses(
             pred_words=pred_words, gold_words=gold_words
         ),
-        **eval_morpheme_glosses(
+        **_eval_morpheme_glosses(
             pred_morphemes=pred_morphemes, gold_morphemes=gold_morphemes
         ),
         'chrf': chrf_score['score'],

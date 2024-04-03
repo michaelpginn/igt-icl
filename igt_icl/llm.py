@@ -8,7 +8,13 @@ from . import prompts
 dirname = os.path.dirname(__file__)
 
 
-def _run_openai_prompt(system_prompt: str, prompt: str, api_key: str, model="gpt-3.5-turbo-0125", temperature=1, seed=0, verbose=True) -> Tuple[str, int]:
+def _run_openai_prompt(hydrated_system_prompt: str,
+                       hydrated_prompt: str,
+                       api_key: str,
+                       model="gpt-3.5-turbo-0125",
+                       temperature=1,
+                       seed=0,
+                       verbose=True) -> Tuple[str, int]:
     """Runs a specified system prompt and user prompt using the OpenAI API.
 
     Args:
@@ -27,8 +33,8 @@ def _run_openai_prompt(system_prompt: str, prompt: str, api_key: str, model="gpt
     completion = client.chat.completions.create(
         model=model,
         messages=[
-            {"role": "system", "content": system_prompt},
-            {"role": "user", "content": prompt}
+            {"role": "system", "content": hydrated_system_prompt},
+            {"role": "user", "content": hydrated_prompt}
         ],
         temperature=temperature,
         top_p=1,
@@ -68,13 +74,20 @@ def _parse_response(response: str) -> Union[str, List[str]]:
         return matches[0][0]
 
 
-def gloss_with_llm(data: Dict, system_prompt_key: str, prompt_key: str, llm_type: str, model: str, api_key: str = None, temperature=1, seed=0) -> Tuple[Union[str, List[str]], int]:
+def gloss_with_llm(data: Dict,
+                   system_prompt: prompts.Prompt,
+                   prompt: prompts.Prompt,
+                   llm_type: str,
+                   model: str,
+                   api_key: str = None,
+                   temperature=1,
+                   seed=0) -> Tuple[Union[str, List[str]], int]:
     """Actually runs LLM inference on a single example.
 
     Args:
         data (Dict): The example to run inference on. Must contain 'transcription', 'translation', 'language', and 'metalang', and any other fields required by the prompts.
-        system_prompt_key (str): The name of a prompt in `prompts/system`, without the file extension.
-        prompt_key (str): The name of a prompt in `prompts/user`, without the file extension.
+        system_prompt (prompts.Prompt): A system prompt to run
+        prompt (prompts.Prompt): A prompt to run
         llm_type (str): 'openai' | 'local'
         model (str, optional): Name of the model to use.
         temperature (int, optional): Defaults to 1.
@@ -83,12 +96,12 @@ def gloss_with_llm(data: Dict, system_prompt_key: str, prompt_key: str, llm_type
     Returns:
         Tuple[Union[str, List[str]], int]: The gloss line or list of gloss lines predicted by the LLM, and number of tokens used.
     """
-    system_prompt = prompts.hydrate_prompt(os.path.join(dirname, f"prompts/system/{system_prompt_key}.prompt"), data)
-    prompt = prompts.hydrate_prompt(os.path.join(dirname, f"prompts/user/{prompt_key}.prompt"), data)
+    hydrated_system_prompt = system_prompt.hydrate(data)
+    hydrated_prompt = prompt.hydrate(data)
 
     if llm_type == 'openai':
-        response, num_tokens_used = _run_openai_prompt(system_prompt=system_prompt,
-                                                       prompt=prompt,
+        response, num_tokens_used = _run_openai_prompt(hydrated_system_prompt=hydrated_system_prompt,
+                                                       hydrated_prompt=hydrated_prompt,
                                                        api_key=api_key,
                                                        model=model,
                                                        temperature=temperature,
