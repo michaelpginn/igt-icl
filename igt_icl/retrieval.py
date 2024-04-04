@@ -32,32 +32,32 @@ class Retriever(ABC):
 
     @classmethod
     def register_class(cls, key: str, concrete_class: Type['Retriever']):
-        cls._registry[key] = concrete_class
+        cls._stock_subclasses[key] = concrete_class
 
     @classmethod
-    def stock_retrievers(cls):
+    def stock_retriever_methods(cls):
         """Returns the keys for the valid stock retrievers"""
         return cls._stock_subclasses
 
     @classmethod
     def stock(cls,
-              key: str,
+              method: str,
               n_examples: int,
               dataset: Union[datasets.Dataset, str]) -> 'Retriever':
         """Initializes a `Retriever` using a stock (built-in) subclass.
 
         Args:
-            key (str): The `key` of the class. See all valid options by running `Retriever.stock_retrievers()`
+            method (str): A key for a type of retrieval methods. See all valid options by running `Retriever.stock_retriever_methods()`
             n_examples (int): How many examples to retrieve for a given call
             dataset (Union[datasets.Dataset, str]): The source dataset to use, or 'glosslm' to use the [glosslm corpus](https://huggingface.co/lecslab/glosslm).
         """
-        if key in cls._stock_subclasses:
-            return cls._stock_subclasses[key].__init__(n_examples=n_examples, dataset=dataset)
+        if method in cls._stock_subclasses:
+            return cls._stock_subclasses[method].__init__(n_examples=n_examples, dataset=dataset)
         else:
             raise ValueError("fNo stock class with key {key}")
 
     @abstractmethod
-    def retrieve_related(self, example: IGT) -> List[IGT]:
+    def retrieve(self, example: IGT) -> List[IGT]:
         """Retrieves `self.n_examples` examples from `self.dataset`. Implementation depends on the subclass.    
 
         Args:
@@ -67,7 +67,7 @@ class Retriever(ABC):
 
 
 class RandomRetriever(Retriever):
-    def retrieve_related(self, example: IGT) -> List[IGT]:
+    def retrieve(self, example: IGT) -> List[IGT]:
         examples = self.dataset.shuffle().select(range(self.n_examples))
         return [IGT(*ex) for ex in examples]
 

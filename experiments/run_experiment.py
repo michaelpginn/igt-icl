@@ -92,7 +92,7 @@ def run_experiment(glottocode: str,
         if retriever_key is not None:
             retriever = Retriever.stock('random', n_examples=3, dataset=glosslm_corpus['train'])
             # Run retrieval and add examples to the prompt data payload
-            fewshot_examples = retriever.retrieve_related(example)
+            fewshot_examples = retriever.retrieve(example)
 
         return gloss_with_llm(igt,
                               system_prompt=Prompt.stock(system_prompt_key, PromptType.SYSTEM),
