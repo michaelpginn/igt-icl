@@ -8,23 +8,19 @@ LLM-based Automated Interlinear Glossing
 `igt-icl` packages a number of prompts for easy IGT glossing.
 
 ```python
-from igt_icl import gloss_with_llm, Prompt, PromptType
+from igt_icl import IGT, gloss_with_llm, Prompt, PromptType
 
-example = {
-    'transcription': 'los gatos corren',
-    'translation': 'the cats run',
-    'language': 'Spanish',
-    'metalang': 'English'
-}
+example = IGT(transcription='los gatos corren',
+              translation='the cats run',
+              language='Spanish',
+              metalang='English')
 
 glosses, number_of_tokens = gloss_with_llm(example,
                                            system_prompt=Prompt.stock('base', PromptType.SYSTEM),
                                            prompt=Prompt.stock('zeroshot', PromptType.USER),
                                            llm_type='openai',
                                            model='gpt-3.5-turbo-0125',
-                                           api_key='your_key_here',
-                                           temperature=1,
-                                           seed=0)
+                                           api_key='your_key_here')
 
 print(glosses) # "DET.PL cat.PL run.3PL"
 ```
@@ -41,8 +37,8 @@ Prompt.list_prompt_keys()
 from igt_icl import Retriever
 
 my_dataset = datasets.load_dataset("...")
-retriever = retriever(method='longest_common_substring', n=4, dataset=my_dataset)
-retrieved_examples = retriever(example)
+retriever = Retriever.stock(method='longest_common_substring', n=4, dataset=my_dataset)
+retrieved_examples = retriever.retrieve(example)
 
 glosses, number_of_tokens = gloss_with_llm(example,
                                            system_prompt_key='base',
@@ -59,7 +55,7 @@ glosses, number_of_tokens = gloss_with_llm(example,
 There is also support for using the [GlossLM Corpus](https://huggingface.co/datasets/lecslab/glosslm-corpus) as a retrieval source. The GlossLM Corpus is a massive multilingual corpus of nearly half a million IGT examples in over a thousand languages.
 
 ```python
-from igt_icl import glosslm_retriever
-retriever = glosslm_retriever(method='longest_common_substring', n=4)
+from igt_icl import Retriever
+retriever = Retriever.stock(method='longest_common_substring', n=4, dataset='glosslm')
 ```
 
