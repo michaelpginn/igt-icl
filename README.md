@@ -25,9 +25,20 @@ glosses, number_of_tokens = gloss_with_llm(example,
 print(glosses) # "DET.PL cat.PL run.3PL"
 ```
 
-You can see the entire list of prompts by running
+### Stock Prompts
+
+You can see the entire list of stock prompts by running
 ```python
 Prompt.list_prompt_keys()
+```
+
+### Prompt Fields
+Some prompts, such as `base_glosslist`, require additional data to be passed in via the `additional_data={}` argument of the `gloss_with_llm` function. You can view the requirements of a given prompt using:
+
+```python
+prompt = Prompt.stock('base_glosslist', PromptType.SYSTEM),
+prompt.required_fields
+# ['language', 'metalang', 'gloss_list']
 ```
 
 ### Custom Prompts
@@ -45,7 +56,7 @@ You are an expert documentary linguist, specializing in $language. You are worki
 Specifically, you will be provided with a line of text in $language as well as a translation of the text into $metalang, in the following format.
 ```
 
-Currently, we support the following placeholders:
+Currently, we support the following standard placeholders:
 - `$language`
 - `$metalang`
 - `$transcription`
