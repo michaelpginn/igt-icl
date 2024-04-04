@@ -1,38 +1,75 @@
-from typing import Dict, List
+from typing import Dict, List, Callable, Type, Union
 from abc import ABC, abstractmethod
 import datasets
+from .igt import IGT
 
 
 class Retriever(ABC):
+    _stock_subclasses: Dict[str, Type['Retriever']] = {}
+
     n_examples: int
     dataset: datasets.Dataset
 
-    def __init__(self, n_examples: int, dataset: datasets.Dataset):
+    def __init__(self,
+                 n_examples: int,
+                 dataset: Union[datasets.Dataset, str]):
         """Initializes a `Retriever`
 
         Args:
             n_examples (int): How many examples to retrieve for a given call
-            dataset (datasets.Dataset): The source dataset to use
+            dataset (Union[datasets.Dataset, str]): The source dataset to use, or 'glosslm' to use the [glosslm corpus](https://huggingface.co/lecslab/glosslm).
         """
         super().__init__()
         self.n_examples = n_examples
-        self.dataset = dataset
+
+        if isinstance(dataset, str):
+            if dataset == 'glosslm':
+                self.dataset = datasets.load_dataset("lecslab/glosslm-corpus")
+            else:
+                raise Exception("`dataset` should either be 'glosslm' or a `Dataset` object")
+        else:
+            self.dataset = dataset
 
     @classmethod
-    def glosslm(cls, n_examples: int):
-        """Initializes a `Retriever` that retrieves from the [glosslm corpus](https://huggingface.co/lecslab/glosslm).
+    def register_class(cls, key: str, concrete_class: Type['Retriever']):
+        cls._registry[key] = concrete_class
+
+    @classmethod
+    def stock_retrievers(cls):
+        """Returns the keys for the valid stock retrievers"""
+        return cls._stock_subclasses
+
+    @classmethod
+    def stock(cls,
+              key: str,
+              n_examples: int,
+              dataset: Union[datasets.Dataset, str]) -> 'Retriever':
+        """Initializes a `Retriever` using a stock (built-in) subclass.
 
         Args:
+            key (str): The `key` of the class. See all valid options by running `Retriever.stock_retrievers()`
             n_examples (int): How many examples to retrieve for a given call
+            dataset (Union[datasets.Dataset, str]): The source dataset to use, or 'glosslm' to use the [glosslm corpus](https://huggingface.co/lecslab/glosslm).
         """
-        glosslm_corpus = datasets.load_dataset("lecslab/glosslm-corpus")
-        return Retriever(n_examples=n_examples, dataset=glosslm_corpus['train'])
+        if key in cls._stock_subclasses:
+            return cls._stock_subclasses[key].__init__(n_examples=n_examples, dataset=dataset)
+        else:
+            raise ValueError("fNo stock class with key {key}")
 
     @abstractmethod
-    def retrieve_related(example: Dict) -> List[Dict]:
-        """Retrieves `self.n_examples` examples from `self.dataset`. The retrieval strategy depends on the subclass implementation.
+    def retrieve_related(self, example: IGT) -> List[IGT]:
+        """Retrieves `self.n_examples` examples from `self.dataset`. Implementation depends on the subclass.    
 
         Args:
-            example (Dict): _description_
+            example (igt.IGT): The target example
         """
         pass
+
+
+class RandomRetriever(Retriever):
+    def retrieve_related(self, example: IGT) -> List[IGT]:
+        examples = self.dataset.shuffle().select(range(self.n_examples))
+        return [IGT(*ex) for ex in examples]
+
+
+Retriever.register_class('random', RandomRetriever)

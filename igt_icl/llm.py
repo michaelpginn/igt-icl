@@ -84,7 +84,7 @@ def gloss_with_llm(example: IGT,
                    model: str = 'gpt-3.5-turbo-0125',
                    api_key: str = None,
                    temperature=1,
-                   seed=0) -> Tuple[Union[str, List[str]], int]:
+                   seed=0) -> Dict:
     """Actually runs LLM inference on a single example.
 
     Args:
@@ -99,10 +99,15 @@ def gloss_with_llm(example: IGT,
         seed (int, optional): Defaults to 0.
 
     Returns:
-        Tuple[Union[str, List[str]], int]: The gloss line or list of gloss lines predicted by the LLM, and number of tokens used.
+        Dict: A dictionary containing the following:
+                `response`: The gloss line(s) predicted by the model
+                `total_tokens`: The total number of tokens used
+                `system_prompt`: The (hydrated) system prompt
+                `prompt`: The (hydrated) prompt
     """
-    hydrated_system_prompt = system_prompt.hydrate(data)
-    hydrated_prompt = prompt.hydrate(data)
+    fewshot_examples = {'fewshot_examples': ' '.join(str(fewshot_examples))}
+    hydrated_system_prompt = system_prompt.hydrate(example.__dict__, additional_data, fewshot_examples)
+    hydrated_prompt = prompt.hydrate(example.__dict__, additional_data, fewshot_examples)
 
     if llm_type == 'openai':
         response, num_tokens_used = _run_openai_prompt(hydrated_system_prompt=hydrated_system_prompt,
@@ -117,4 +122,9 @@ def gloss_with_llm(example: IGT,
     else:
         raise Exception('Invalid `llm_type` passed')
 
-    return _parse_response(response), num_tokens_used
+    return {
+        'response': _parse_response(response),
+        'total_tokens': num_tokens_used,
+        'system_prompt': hydrated_system_prompt,
+        'prompt': hydrated_prompt
+    }

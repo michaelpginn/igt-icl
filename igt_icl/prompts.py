@@ -41,9 +41,17 @@ class Prompt:
             pattern = r'\$\{?(\w+)\}?'
             self.required_fields = sorted(set(re.findall(pattern, prompt_string)))
 
-    def hydrate(self, data: Dict):
-        """Hydrates the prompt with the given data"""
-        return self.template.substitute(data)
+    def hydrate(self, *args: Dict):
+        """Hydrates the prompt with the given args. Data may be provided in multiple dictionaries if needed.
+
+        Args:
+            *args (Dict): One or more dictionaries, which will be subbed into the prompt by the keys.
+
+        Returns:
+            _type_: _description_
+        """
+        merged_dict = {key: value for d in args for key, value in d.items()}
+        return self.template.substitute(merged_dict)
 
     @classmethod
     def stock(cls, key: str, type: PromptType):

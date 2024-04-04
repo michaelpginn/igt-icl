@@ -5,17 +5,16 @@ import os
 import sys
 from pathlib import Path
 from dotenv import load_dotenv
+import json
+
 import datasets
 from tqdm.autonotebook import tqdm
-import json
 import fire
-
-import igt_icl.prompts
 
 project_root = Path(__file__).parent.parent
 sys.path.append(str(project_root))
 
-import igt_icl
+from igt_icl import gloss_with_llm, Prompt, PromptType, IGT, Retriever, evaluate_igt
 
 load_dotenv()
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
@@ -32,12 +31,13 @@ def _eval_dataset(dataset: datasets.Dataset, inference_function: Callable[[Dict]
     references = []
     total_tokens = 0
     for example in tqdm(dataset, "Running inference"):
-        references.append(example['glosses'])
-        prediction, tokens_used = inference_function(example)
-        predictions.append(prediction)
-        total_tokens += tokens_used
+        response = inference_function(example)
 
-    metrics = igt_icl.evaluate_igt(predictions=predictions, references=references)
+        references.append(example['glosses'])
+        predictions.append(response['response'])
+        total_tokens += response['total_tokens']
+
+    metrics = evaluate_igt(predictions=predictions, references=references)
     metrics["total_tokens"] = total_tokens
     metrics["avg_tokens"] = total_tokens / len(dataset)
     print(metrics)
@@ -48,7 +48,7 @@ def run_experiment(glottocode: str,
                    system_prompt_key: str,
                    prompt_key: str,
                    output_dir: str,
-                   retrieval_function: Callable[[Dict, datasets.DatasetDict], List[Dict]] = None,
+                   retriever_key: str = None,
                    llm_type: str = 'openai',
                    model="gpt-3.5-turbo-0125",
                    temperature=1,
@@ -86,21 +86,23 @@ def run_experiment(glottocode: str,
 
     # Create the appropriate inference function
     def _inference(example: Dict):
-        if retrieval_function is not None:
-            # Run retrieval and add examples to the prompt data payload
-            fewshot_examples = retrieval_function(example, glosslm_corpus)
-            example["fewshot_examples"] = fewshot_examples
+        igt = IGT(**example)
 
-        return igt_icl.gloss_with_llm(example,
-                                      system_prompt=igt_icl.prompts.default_prompt(
-                                          'base', igt_icl.prompts.PromptType.SYSTEM),
-                                      prompt=igt_icl.prompts.default_prompt(
-                                          'zeroshot', igt_icl.prompts.PromptType.USER),
-                                      llm_type=llm_type,
-                                      model=model,
-                                      api_key=OPENAI_API_KEY,
-                                      temperature=temperature,
-                                      seed=seed)
+        fewshot_examples = None
+        if retriever_key is not None:
+            retriever = Retriever.stock('random', n_examples=3, dataset=glosslm_corpus['train'])
+            # Run retrieval and add examples to the prompt data payload
+            fewshot_examples = retriever.retrieve_related(example)
+
+        return gloss_with_llm(igt,
+                              system_prompt=Prompt.stock(system_prompt_key, PromptType.SYSTEM),
+                              prompt=Prompt.stock(prompt_key, PromptType.USER),
+                              fewshot_examples=fewshot_examples,
+                              llm_type=llm_type,
+                              model=model,
+                              api_key=OPENAI_API_KEY,
+                              temperature=temperature,
+                              seed=seed)
 
     # Run evaluation and write to files
     metrics, predictions, references = _eval_dataset(examples, _inference)
