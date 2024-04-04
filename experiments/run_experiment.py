@@ -86,7 +86,7 @@ def run_experiment(glottocode: str,
 
     # Create the appropriate inference function
     def _inference(example: Dict):
-        igt = IGT(**example)
+        igt = IGT.from_dict(example)
 
         fewshot_examples = None
         if retriever_key is not None:

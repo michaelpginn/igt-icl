@@ -1,5 +1,5 @@
-from typing import Optional
-from dataclasses import dataclass
+from typing import Optional, Dict
+from dataclasses import dataclass, fields
 
 
 @dataclass
@@ -17,3 +17,9 @@ class IGT:
         if self.glosses is not None:
             s = s + f"\Glosses: {self.glosses}"
         return s
+
+    @classmethod
+    def from_dict(cls, dict: Dict):
+        dataclass_fields = {field.name for field in fields(IGT)}
+        filtered_dict = {key: value for key, value in dict.items() if key in dataclass_fields}
+        return IGT(**filtered_dict)
