@@ -8,7 +8,7 @@ LLM-based Automated Interlinear Glossing
 `igt-icl` packages a number of prompts for easy IGT glossing.
 
 ```python
-from igt_icl import gloss_with_llm
+from igt_icl import gloss_with_llm, Prompt, PromptType
 
 example = {
     'transcription': 'los gatos corren',
@@ -18,8 +18,8 @@ example = {
 }
 
 glosses, number_of_tokens = gloss_with_llm(example,
-                                           system_prompt_key='base',
-                                           prompt_key='zeroshot',
+                                           system_prompt=Prompt.stock('base', PromptType.SYSTEM),
+                                           prompt=Prompt.stock('zeroshot', PromptType.USER),
                                            llm_type='openai',
                                            model='gpt-3.5-turbo-0125',
                                            api_key='your_key_here',
@@ -31,23 +31,23 @@ print(glosses) # "DET.PL cat.PL run.3PL"
 
 You can see the entire list of prompts by running
 ```python
-igt_icl.list_prompt_keys()
+Prompt.list_prompt_keys()
 ```
 
 ## Retrieval-Augmented Generation
 `igt-icl` supports RAG for more controllable IGT glossing. There are a number of retrieval strategies implemented, which can be used as follows:
 
 ```python
-from igt_icl import retriever
+from igt_icl import Retriever
 
 my_dataset = datasets.load_dataset("...")
 retriever = retriever(method='longest_common_substring', n=4, dataset=my_dataset)
 retrieved_examples = retriever(example)
 
 glosses, number_of_tokens = gloss_with_llm(example,
-                                           fewshot_examples=retrieved_examples,
                                            system_prompt_key='base',
                                            prompt_key='zeroshot',
+                                           fewshot_examples=retrieved_examples,
                                            llm_type='openai',
                                            model='gpt-3.5-turbo-0125',
                                            api_key='your_key_here',
