@@ -5,7 +5,7 @@ LLM-based Automated Interlinear Glossing
 `igt-icl` is a package that allows for automated interlinear glossing using the in-context abilities of large language models (LLMs) to produce context-sensitive gloss lines.
 
 ## Basic Usage
-`igt-icl` packages a number of prompts for easy IGT glossing.
+`igt-icl` packages a number of stock prompts for easy IGT glossing.
 
 ```python
 from igt_icl import IGT, gloss_with_llm, Prompt, PromptType
@@ -30,8 +30,34 @@ You can see the entire list of prompts by running
 Prompt.list_prompt_keys()
 ```
 
+### Custom Prompts
+You can easily add custom prompts as well. First, you will need to create a file with the `.prompt` extension, as in `myprompt.prompt`. This prompt can be either **system** prompt or **user** prompt. System prompts are called at the start of the conversation and generally provide broad guidance to the LLM. User prompts provide the actual request, i.e., to create the IGT.
+
+```python
+custom_prompt = Prompt('/path/to/myprompt.prompt`, PromptType.SYSTEM)
+```
+
+Your prompt may contain whatever text you want. You may use **placeholders** to input values from the IGT example and context. For example, the following block uses the `$language` and `$metalang` placeholders:
+
+```text
+You are an expert documentary linguist, specializing in $language. You are working on a documentation project for $language text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
+
+Specifically, you will be provided with a line of text in $language as well as a translation of the text into $metalang, in the following format.
+```
+
+Currently, we support the following placeholders:
+- `$language`
+- `$metalang`
+- `$transcription`
+- `$translation`
+- `$fewshot_examples`, for methods with retrieval/few-shot learning
+
+You may also add additional placeholders, which should be specified in the `additional_data={}` argument of the `gloss_with_llm` function.
+
+**Crucially**, your prompt must cause the LLM to output something containing the gloss line in the format `Glosses: <gloss line here>`, or the parsing method will fail. 
+
 ## Retrieval-Augmented Generation
-`igt-icl` supports RAG for more controllable IGT glossing. There are a number of retrieval strategies implemented, which can be used as follows:
+`igt-icl` supports RAG for more controllable IGT glossing. There are a number of retrieval strategies implemented, accessed through `Retriever.stock()` as follows:
 
 ```python
 from igt_icl import Retriever
