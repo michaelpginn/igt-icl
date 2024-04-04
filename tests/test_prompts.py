@@ -26,15 +26,15 @@ class TestPrompts(unittest.TestCase):
 
     def test_default_prompt(self):
         """Test that we can fetch and hydrate a built-in prompt"""
-        prompt = prompts.Prompt.from_default('base', prompts.PromptType.SYSTEM)
+        prompt = prompts.Prompt.stock('base', prompts.PromptType.SYSTEM)
         assert prompt.required_fields == ['language', 'metalang']
         hydrated_prompt = prompt.hydrate(self.example_row)
         with open(self.default_prompt_reference_path, 'r') as reference:
             self.assertEqual(hydrated_prompt, reference.read())
 
-    def test_list_prompt_keys(self):
+    def test_list_stock_prompts(self):
         """Test that we can get a list of the built-in prompt keys"""
-        all_prompts = prompts.list_prompt_keys()
+        all_prompts = prompts.Prompt.list_stock_prompts()
         assert 'system' in all_prompts
         assert 'user' in all_prompts
         assert len(all_prompts['system']) > 0

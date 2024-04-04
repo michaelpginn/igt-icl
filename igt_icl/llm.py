@@ -4,6 +4,7 @@ import re
 import os
 
 from . import prompts
+from .igt import IGT
 
 dirname = os.path.dirname(__file__)
 
@@ -74,22 +75,26 @@ def _parse_response(response: str) -> Union[str, List[str]]:
         return matches[0][0]
 
 
-def gloss_with_llm(data: Dict,
+def gloss_with_llm(example: IGT,
                    system_prompt: prompts.Prompt,
                    prompt: prompts.Prompt,
-                   llm_type: str,
-                   model: str,
+                   additional_data: Dict = {},
+                   fewshot_examples: List[IGT] = [],
+                   llm_type: str = 'openai',
+                   model: str = 'gpt-3.5-turbo-0125',
                    api_key: str = None,
                    temperature=1,
                    seed=0) -> Tuple[Union[str, List[str]], int]:
     """Actually runs LLM inference on a single example.
 
     Args:
-        data (Dict): The example to run inference on. Must contain 'transcription', 'translation', 'language', and 'metalang', and any other fields required by the prompts.
+        example (IGT): The example to run inference on.
         system_prompt (prompts.Prompt): A system prompt to run
         prompt (prompts.Prompt): A prompt to run
-        llm_type (str): 'openai' | 'local'
-        model (str, optional): Name of the model to use.
+        additional_data (Dict): A dictionary containing additional fields to fill into the prompt
+        fewshot_examples (List[igt.IGT]): A list of examples to include as few-shots, for relevant prompts
+        llm_type (str): 'openai' | 'local'. Defaults to 'openai'.
+        model (str, optional): Name of the model to use. Defaults to 'gpt-3.5-turbo-0125'.
         temperature (int, optional): Defaults to 1.
         seed (int, optional): Defaults to 0.
 
