@@ -14,8 +14,10 @@ class TestPrompts(unittest.TestCase):
         "metalang": "English"
     }
     prompt_path = os.path.join(dirname, "test_prompt_1.prompt")
-    prompt_reference_path = os.path.join(dirname, "test_prompt_1_hydrated.prompt")
-    default_prompt_reference_path = os.path.join(dirname, "test_prompt_base_hydrated.prompt")
+    prompt_reference_path = os.path.join(
+        dirname, "test_prompt_1_hydrated.prompt")
+    default_prompt_reference_path = os.path.join(
+        dirname, "test_prompt_base_hydrated.prompt")
 
     def test_hydrate_prompt(self):
         """Test that hydrating prompts works as expected."""

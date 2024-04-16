@@ -2,6 +2,7 @@ from typing import Dict, Union, List, Tuple
 from openai import OpenAI
 import re
 import os
+from io import TextIOWrapper
 
 from . import prompts
 from .igt import IGT
@@ -83,7 +84,8 @@ def gloss_with_llm(example: IGT,
                    llm_type: str = 'openai',
                    model: str = 'gpt-3.5-turbo-0125',
                    api_key: str = None,
-                   temperature=1,
+                   temperature=0,
+                   log_file: TextIOWrapper = None,
                    seed=0) -> Dict:
     """Actually runs LLM inference on a single example.
 
@@ -95,7 +97,8 @@ def gloss_with_llm(example: IGT,
         fewshot_examples (List[igt.IGT]): A list of examples to include as few-shots, for relevant prompts
         llm_type (str): 'openai' | 'local'. Defaults to 'openai'.
         model (str, optional): Name of the model to use. Defaults to 'gpt-3.5-turbo-0125'.
-        temperature (int, optional): Defaults to 1.
+        temperature (int, optional): Defaults to 0.
+        log_file: (TextIOWrapper, optional): If provided, a file to write logs to. 
         seed (int, optional): Defaults to 0.
 
     Returns:
@@ -106,8 +109,13 @@ def gloss_with_llm(example: IGT,
                 `prompt`: The (hydrated) prompt
     """
     fewshot_examples = {'fewshot_examples': ' '.join(str(fewshot_examples))}
-    hydrated_system_prompt = system_prompt.hydrate(example.__dict__, additional_data, fewshot_examples)
-    hydrated_prompt = prompt.hydrate(example.__dict__, additional_data, fewshot_examples)
+    hydrated_system_prompt = system_prompt.hydrate(
+        example.__dict__, additional_data, fewshot_examples)
+    hydrated_prompt = prompt.hydrate(
+        example.__dict__, additional_data, fewshot_examples)
+
+    log_file.write(
+        f"===SYSTEM PROMPT===\n{hydrated_system_prompt}\n\n===PROMPT===\n{hydrated_prompt}\n")
 
     if llm_type == 'openai':
         response, num_tokens_used = _run_openai_prompt(hydrated_system_prompt=hydrated_system_prompt,
@@ -121,6 +129,8 @@ def gloss_with_llm(example: IGT,
         raise NotImplementedError
     else:
         raise Exception('Invalid `llm_type` passed')
+
+    log_file.write(f"===RESPONSE===\n{response}\n")
 
     return {
         'response': _parse_response(response),
