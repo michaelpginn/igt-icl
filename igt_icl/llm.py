@@ -16,7 +16,7 @@ def _run_openai_prompt(hydrated_system_prompt: str,
                        model="gpt-3.5-turbo-0125",
                        temperature=1,
                        seed=0,
-                       verbose=True) -> Tuple[str, int]:
+                       verbose=False) -> Tuple[str, int]:
     """Runs a specified system prompt and user prompt using the OpenAI API.
 
     Args:
@@ -86,7 +86,8 @@ def gloss_with_llm(example: IGT,
                    api_key: str = None,
                    temperature=0,
                    log_file: TextIOWrapper = None,
-                   seed=0) -> Dict:
+                   seed=0,
+                   verbose: bool = False) -> Dict:
     """Actually runs LLM inference on a single example.
 
     Args:
@@ -100,6 +101,7 @@ def gloss_with_llm(example: IGT,
         temperature (int, optional): Defaults to 0.
         log_file: (TextIOWrapper, optional): If provided, a file to write logs to. 
         seed (int, optional): Defaults to 0.
+        verbose (bool): Defaults to False
 
     Returns:
         Dict: A dictionary containing the following:
@@ -108,7 +110,8 @@ def gloss_with_llm(example: IGT,
                 `system_prompt`: The (hydrated) system prompt
                 `prompt`: The (hydrated) prompt
     """
-    fewshot_examples = {'fewshot_examples': ' '.join(str(fewshot_examples))}
+    fewshot_examples = {'fewshot_examples':
+                        '\n\n'.join(map(str, fewshot_examples))}
     hydrated_system_prompt = system_prompt.hydrate(
         example.__dict__, additional_data, fewshot_examples)
     hydrated_prompt = prompt.hydrate(
@@ -124,13 +127,13 @@ def gloss_with_llm(example: IGT,
                                                        model=model,
                                                        temperature=temperature,
                                                        seed=seed,
-                                                       verbose=True)
+                                                       verbose=verbose)
     elif llm_type == 'local':
         raise NotImplementedError
     else:
         raise Exception('Invalid `llm_type` passed')
 
-    log_file.write(f"===RESPONSE===\n{response}\n")
+    log_file.write(f"===RESPONSE===\n{response}\n\n===END====\n\n\n\n")
 
     return {
         'response': _parse_response(response),

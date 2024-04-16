@@ -26,7 +26,8 @@ class Retriever(ABC):
             if dataset == 'glosslm':
                 self.dataset = datasets.load_dataset("lecslab/glosslm-corpus")
             else:
-                raise Exception("`dataset` should either be 'glosslm' or a `Dataset` object")
+                raise Exception(
+                    "`dataset` should either be 'glosslm' or a `Dataset` object")
         else:
             self.dataset = dataset
 
@@ -51,8 +52,9 @@ class Retriever(ABC):
             n_examples (int): How many examples to retrieve for a given call
             dataset (Union[datasets.Dataset, str]): The source dataset to use, or 'glosslm' to use the [glosslm corpus](https://huggingface.co/lecslab/glosslm).
         """
+        # Look at the _stock_subclasses, which is dynamically updated after subclasses are written
         if method in cls._stock_subclasses:
-            return cls._stock_subclasses[method].__init__(n_examples=n_examples, dataset=dataset)
+            return cls._stock_subclasses[method](n_examples=n_examples, dataset=dataset)
         else:
             raise ValueError("fNo stock class with key {key}")
 
@@ -68,8 +70,10 @@ class Retriever(ABC):
 
 class RandomRetriever(Retriever):
     def retrieve(self, example: IGT) -> List[IGT]:
-        examples = self.dataset.shuffle().select(range(self.n_examples))
-        return [IGT(*ex) for ex in examples]
+        examples = self.dataset \
+                       .shuffle() \
+                       .select(range(self.n_examples))
+        return [IGT.from_dict(ex) for ex in examples]
 
 
 Retriever.register_class('random', RandomRetriever)

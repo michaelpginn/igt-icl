@@ -80,6 +80,7 @@ def run_experiment(glottocode: str,
                    output_dir: str,
                    use_gloss_list: str = None,
                    retriever_key: str = None,
+                   num_fewshot_examples: int = None,
                    llm_type: str = 'openai',
                    model="gpt-3.5-turbo-0125",
                    temperature=0,
@@ -91,14 +92,18 @@ def run_experiment(glottocode: str,
         system_prompt_key (str): The name of a prompt in `prompts/system`, without the file extension.
         prompt_key (str): The name of a prompt in `prompts/user`, without the file extension.
         output_dir (str): The directory to write results to.
-        use_gloss_list (boolean): None | 'split_morphemes_and_fusional' | 'split_morphemes'
+        use_gloss_list (str, Optional): None | 'split_morphemes_and_fusional' | 'split_morphemes'
         retriever_key (Callable[[Dict, datasets.DatasetDict], List[Dict]]): If provided, a function for retrieving similar examples for few-shot prompts. Defaults to None.
+        num_fewshot_examples (int, optional): The number of examples to include if a retrieval strategy has been selected.
         llm_type (str): 'openai' | 'local'
         model (str, optional): The API model to use. Defaults to "gpt-3.5-turbo-0125".
         temperature (int, optional): Defaults to 1.
         seed (int, optional): Defaults to 0.
     """
     assert os.path.isdir(output_dir)
+
+    assert (num_fewshot_examples is None and retriever_key is None) or (
+        num_fewshot_examples is not None and retriever_key is not None)
 
     # Load the appropriate eval dataset
     print("Loading dataset...")
@@ -118,8 +123,9 @@ def run_experiment(glottocode: str,
         lambda row: row['glottocode'] == glottocode)
     eval_dataset = glosslm_corpus[f"eval_{id_or_ood}"].filter(
         lambda row: row['glottocode'] == glottocode)
+    language = eval_dataset['language'][0]
     print(
-        f"Lang: {eval_dataset['language'][0]}\n# Train examples: {len(train_dataset)}\n# Eval examples: {len(eval_dataset)}")
+        f"Lang: {language}\n# Train examples: {len(train_dataset)}\n# Eval examples: {len(eval_dataset)}")
 
     additional_data = {}
 
@@ -131,8 +137,11 @@ def run_experiment(glottocode: str,
     # Create a Retriever, if applicable
     retriever = None
     if retriever_key is not None:
-        retriever = Retriever.stock(
-            'random', n_examples=3, dataset=glosslm_corpus['train'])
+        dataset_filtered = glosslm_corpus[f'train_{id_or_ood}'].filter(lambda row:
+                                                                       row['language'] == language)
+        retriever = Retriever.stock('random',
+                                    n_examples=num_fewshot_examples,
+                                    dataset=dataset_filtered)
 
     log_file = open(os.path.join(
         output_dir, f"{glottocode}-log.out"), 'w', encoding='utf-8')
@@ -144,7 +153,7 @@ def run_experiment(glottocode: str,
         # If appropriate, run retrieval and add examples to the prompt data payload
         fewshot_examples = None
         if retriever is not None:
-            fewshot_examples = retriever.retrieve(example)
+            fewshot_examples = retriever.retrieve(igt)
 
         return gloss_with_llm(igt,
                               system_prompt=Prompt.stock(
