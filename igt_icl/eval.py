@@ -57,7 +57,8 @@ def _eval_stems_grams(pred: List[List[str]], gold: List[List[str]]) -> dict:
         for token_index in range(len(entry_gold)):
             # We can determine if a token is a stem or gram by checking if it is
             # all uppercase
-            token_type = "gram" if entry_gold[token_index].isupper() else "stem"
+            token_type = "gram" if entry_gold[token_index].isupper(
+            ) else "stem"
             perf[token_type]["gold"] += 1
 
             if token_index < len(entry_pred):
@@ -158,7 +159,7 @@ def evaluate_igt(
 
     chrf = evaluate.load("chrf")
     chrf_score = chrf.compute(
-        predictions=references, references=references, word_order=2
+        predictions=predictions, references=[[ref] for ref in references], word_order=2
     )
 
     return {

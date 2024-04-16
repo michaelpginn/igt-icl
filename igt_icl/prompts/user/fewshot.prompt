@@ -1,0 +1,7 @@
+Here are some complete glossed examples:
+$fewshot_examples
+
+Please gloss the following example in $language.
+
+Transcription: $transcription
+Translation: $translation

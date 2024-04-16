@@ -15,11 +15,12 @@ class IGT:
         if self.translation is not None:
             s = s + f"\nTranslation: {self.translation}"
         if self.glosses is not None:
-            s = s + f"\Glosses: {self.glosses}"
+            s = s + f"\nGlosses: {self.glosses}"
         return s
 
     @classmethod
     def from_dict(cls, dict: Dict):
         dataclass_fields = {field.name for field in fields(IGT)}
-        filtered_dict = {key: value for key, value in dict.items() if key in dataclass_fields}
+        filtered_dict = {key: value for key,
+                         value in dict.items() if key in dataclass_fields}
         return IGT(**filtered_dict)
