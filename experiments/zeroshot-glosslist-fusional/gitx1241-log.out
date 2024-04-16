@@ -12,7 +12,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -20,7 +20,7 @@ Please gloss the following example in Gitxsan.
 Transcription: k̲'ay yukw-hl hlgu-ts'uusk-'y k̲'ay hlgu-ts'uusk-'y dis wil-hl hogwin kw'itxw-hl hli gu'm a-loo-hl g̲a'a-hl Gijigyukwhla'a
 Translation: When I was young our relative came over that lives in Gitsegyukla. || I was still young, I was young when our relative came over in Gitsegyukla.
 ===RESPONSE===
-Glosses: when young-LOC come-3SG.II-PROSP that live-3SG.II-PROSP there come-3SG.II-PROSP that live-3SG.II-PROSP there still-LOC young be-1SG.II-PROSP in Gitsegyukla
+Glosses: when young-LOC come-3SG.A-PROG our relative-1PL.POSS-DEM live-3SG.A-PROG that Gitsegyukla-LOC in young-LOC come-3SG.A-PROG our relative-1PL.POSS-DEM Gitsegyukla-LOC
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -35,7 +35,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -43,7 +43,7 @@ Please gloss the following example in Gitxsan.
 Transcription: K̲'ay yukwhl guts'uusgi'y , k̲'ay guts'uusgi'y dis wihl hogwin kw'itxwhl hla gu'm aloohl , g̲a'ahl Gijigyukwhla'a .
 Translation: When I was young our relative came over that lives in Gitsegyukla. || I was still young, I was young when our relative came over in Gitsegyukla.
 ===RESPONSE===
-Glosses: when young 1SG be.young-PROG come-3.II REL our live-3.II LOC Gitsegyukla || be.young-PROG our live-3.II when come-3.II REL our in Gitsegyukla
+Glosses: when young 1SG-EMPH come-PROG=CN , when come-PROG=CN DEM live-LOC Gitsegyukla in relative our || still young young when come-PROG=CN in Gitsegyukla relative our
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -58,7 +58,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -66,7 +66,7 @@ Please gloss the following example in Gitxsan.
 Transcription: k̲'ay yukw-hl jok̲-'m g̲a'a-hl ts'im wilp-s nox̲-'m g̲an nigwoot-'m
 Translation: We were still living at our mom and dad's house.
 ===RESPONSE===
-Glosses: 1PL.II still-live-IPFV house-LOC 1.I-parent-LOC at live-IPFV 1PL.II house-LOC
+Glosses: 1PL PAST-still-LOC live-IPFV 1PL.POSS-mother-LOC and father-LOC house-LOC at PAST-1PL.POSS house-LOC
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -81,7 +81,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -89,7 +89,7 @@ Please gloss the following example in Gitxsan.
 Transcription: K̲'ay yukwhl jog̲o'm g̲a'ahl ts'im wilps nox̲o'm g̲an nigwoodi'm .
 Translation: We were still living at our mom and dad's house.
 ===RESPONSE===
-Glosses: 1PL.II still live-IPFV house-LOC parent.PL 1PL.POSS-LOC mother-LOC father-LOC at.
+Glosses: 1PL- be still- live- LOC- 1PL.POSS- mother- and- father- house- at- 1PL- POS- ANTIP- live- LOC- 1PL- POSS
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -104,7 +104,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -112,7 +112,7 @@ Please gloss the following example in Gitxsan.
 Transcription: ii hogwin kw'itxw-s Man-hl wa-t Man hogwin kw'itxw Jacob Brown
 Translation: And Man came over, he was called "Man". Jacob Brown came over.
 ===RESPONSE===
-Glosses: and man come-PST-3SG Man-NAME PST-be Man man come-PST Jacob Brown
+Glosses: and man-AX come-PFV-3SG Man-FOC be-3SG Man man-AX come-PFV Jacob Brown
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -127,7 +127,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -135,7 +135,7 @@ Please gloss the following example in Gitxsan.
 Transcription: Ii hogwin kw'itxws Manhl wat , Man , hogwin kw'itxw Jacob Brown .
 Translation: And Man came over, he was called "Man". Jacob Brown came over.
 ===RESPONSE===
-Glosses: and come-3SG.II over Man called Man come-3SG.II Jacob Brown
+Glosses: and man come-PAST over Man REL man come-PAST Jacob Brown
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -150,7 +150,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -158,7 +158,7 @@ Please gloss the following example in Gitxsan.
 Transcription: ii hasak̲-t dim-t mehl-i-hl wila wil-t win yukw-hl silin-asxw-t
 Translation: He wants to tell the story of when he was hunting.
 ===RESPONSE===
-Glosses: 3SG.II want-IPFV tell-IPFV story-LOC-3SG.II when hunt-IPFV be-IPFV-3SG.II
+Glosses: 3SG want-IPFV tell-IPFV story-LOC-3SG when hunt-PST be-IPFV-3SG tale-PROX-TR
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -173,7 +173,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -181,7 +181,7 @@ Please gloss the following example in Gitxsan.
 Transcription: Ii hasak̲t dimt mehlihl wila wilt win yukwhl silinasxwt .
 Translation: He wants to tell the story of when he was hunting.
 ===RESPONSE===
-Glosses: 3SG.II want tell story when hunt PROSP
+Glosses: 3SG want tell story when hunt-PROG.SUBORD.
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -196,7 +196,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -204,7 +204,7 @@ Please gloss the following example in Gitxsan.
 Transcription: ii hlaa yukw dim saa yee-t
 Translation: And before he goes
 ===RESPONSE===
-Glosses: and before he go-3SG.II.SUBJ-FUT
+Glosses: and before he go-3SG.SUBJ.SUBORD-3SG.OBJ
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -219,7 +219,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -227,7 +227,7 @@ Please gloss the following example in Gitxsan.
 Transcription: Ii hlaa yukw dim saa yeet ,
 Translation: And before he goes
 ===RESPONSE===
-Glosses: and before he go-PROSP 
+Glosses: and before 3SG go-PROSP DEM.
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -242,7 +242,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -250,7 +250,7 @@ Please gloss the following example in Gitxsan.
 Transcription: ii-t dok̲-hl walk̲'a 'nit-hl g̲abii-hl dim hoox-i-t dim wila da'ak̲hlxw siilin-asxw-t
 Translation: And he gathers everything to use so he can catch what he's hunting.
 ===RESPONSE===
-Glosses: and-3.I gather-IPFV all-ACC use-3.I in order.to catch-IPFV what hunt-3.I.SUBJ-3.IOBJ what so that can-3.I.SUBJ-3.IOBJ
+Glosses: and-3SG gather-IPFV all use-ANTIP 3SG can-3SG catch hunt-TR-3SG catch what-3SG hunt-PROG
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -265,7 +265,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -273,7 +273,7 @@ Please gloss the following example in Gitxsan.
 Transcription: Iit dok̲hl walk̲'a 'nithl g̲abiihl dim hooyit , dim wila da'ak̲hlxw silinasxwt .
 Translation: And he gathers everything to use so he can catch what he's hunting.
 ===RESPONSE===
-Glosses: and gather-3SG everything for use so hunt-3SG can catch-INF
+Glosses: and gather-3SG all thing for use so hunt-3SG can catch-INF
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -288,7 +288,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -296,7 +296,7 @@ Please gloss the following example in Gitxsan.
 Transcription: ii hasak̲-t dim-t mehl-i-t loo-'m wila wil-t
 Translation: And he wants to tell us how he would do it.
 ===RESPONSE===
-Glosses: and want-3SG.II tell-3SG.II 1PL.II-ACC how do-FUT 3SG.II 3SG.II-ACC
+Glosses: and want-3SG tell-3SG 1PL-ACC how do-FUT 3SG.SUBJ do-3SG
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -311,7 +311,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -319,7 +319,7 @@ Please gloss the following example in Gitxsan.
 Transcription: Ii hasak̲t dimt mehlit loo'm wila wilt .
 Translation: And he wants to tell us how he would do it.
 ===RESPONSE===
-Glosses: and want-3SG tell-3SG.INC how 1PL.INCL do-INF it
+Glosses: and want-3SG tell-3SG.INCP 1PL how do-INF it
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -334,7 +334,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -342,7 +342,7 @@ Please gloss the following example in Gitxsan.
 Transcription: ii-t wen-di-'m t'aa-t-i-t 'nuu'm 'nii'y g̲an-hl g̲a-sdik'eekw-s-'y
 Translation: And he made us sit down, he sat us down, me and my brothers and sisters.
 ===RESPONSE===
-Glosses: and-3.II make-TR-1PL.II sit-TR-1SG.II 1SG.II and my siblings sit.down-CAUS-3PL.II-3SG.II
+Glosses: and-3SG make-TR-1PL sit-TR-3SG down 1SG-POSS sibling-PL sit-TR-3SG-SELF
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -357,7 +357,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -365,7 +365,7 @@ Please gloss the following example in Gitxsan.
 Transcription: Iit wendi'm , t'aatdit 'nuu'm , 'nii'y g̲anhl g̲asdik'eekwsi'y .
 Translation: And he made us sit down, he sat us down, me and my brothers and sisters.
 ===RESPONSE===
-Glosses: and sit-PROSP-1PL.II down-PROSP-1PL.II , sit-PROSP-1SG.II down-PROSP-1SG.II , 1SG and 1PL.II sibling sibling-PL sit-PASS-3PL.II.
+Glosses: and sit-CAUS1-1PL , sit-CAUS1-1PL , 1SG and 1PL.POSS brother.PL and sister.PL
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -380,7 +380,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -388,7 +388,7 @@ Please gloss the following example in Gitxsan.
 Transcription: ii 'nii win he-t dim mehl-d-i-'y t-xwin loo-n
 Translation: And then he said, "I will tell you this."
 ===RESPONSE===
-Glosses: and then 3SG.II say-3SG.II-PROSP 1SG.OBJ tell-FUT-1SG you this-OBJ
+Glosses: and then 3SG.SG say-TR DIM tell-PROSP-1SG 2SG.OBL this-FUT tell-FUT.
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -403,7 +403,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -411,7 +411,7 @@ Please gloss the following example in Gitxsan.
 Transcription: Ii 'nii win het , "Dim mehldi'y tun loon ."
 Translation: And then he said, "I will tell you this."
 ===RESPONSE===
-Glosses: and then 3SG.II say, "tell-FUT 1SG.II this"
+Glosses: and then 3SG say-PROSP , "tell-FUT 1SG this"
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -426,7 +426,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -434,7 +434,7 @@ Please gloss the following example in Gitxsan.
 Transcription: yukw-hl yee-'y dim silin-asxw-'y ii t'aa-hl bisde'y sg̲a t'aa-hl bisde'y diye 'nit
 Translation: I was going to hunt, and a grouse was there, a grouse was in the way," he said.
 ===RESPONSE===
-Glosses: go-IPFV 1SG-I hunt-PROG=CN 3SG grouse-INDP 3SG grouse-INDP there say-IPFV 3SG.
+Glosses: go-IPFV 1SG-PROG=CN hunt-IPFV-PROG=CN and grouse-IPFV-PROG=CN DEM grouse-IPFV-PROG=CN there say-IPFV 3SG.
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -449,7 +449,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -457,7 +457,7 @@ Please gloss the following example in Gitxsan.
 Transcription: "Yukwhl yee'y dim silinasxwi'y , ii t'aahl bisde'y , sg̲a t'aahl bisde'y ," diye 'nit .
 Translation: I was going to hunt, and a grouse was there, a grouse was in the way," he said.
 ===RESPONSE===
-Glosses: go PAST-1SG hunt-PROSP, and grouse be-PAST-3SG there, grouse be-PAST-3SG in.way, say-PAST 3SG.
+Glosses: go PAST-1SG FUT hunt-PROSP-1SG , and grouse be-3SG there , and grouse be-3SG in.way , say-3SG he
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -472,7 +472,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -495,7 +495,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -503,7 +503,7 @@ Please gloss the following example in Gitxsan.
 Transcription: "Ii na gya'ahl x̲adaa ."
 Translation: "And I saw the moose.
 ===RESPONSE===
-Glosses: 1SG CCNJ see moose
+Glosses: and 1SG see moose
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -518,7 +518,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -526,7 +526,7 @@ Please gloss the following example in Gitxsan.
 Transcription: yukw-hl hasak̲-'y dim n tx̲oog̲-in-hl g̲al-ts'ep-'y
 Translation: "I wanted to feed my village."
 ===RESPONSE===
-Glosses: want-1SG feed-PROSP my village-1SG.POSS-ACC.PL.
+Glosses: want-1SG feed-PROSP 1SG POSS village-LOC-1SG 1SG-POSS
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -541,7 +541,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -549,7 +549,7 @@ Please gloss the following example in Gitxsan.
 Transcription: "Yukwhl hasag̲a'y dim an tx̲oog̲anhl g̲alts'ebi'y ."
 Translation: "I wanted to feed my village."
 ===RESPONSE===
-Glosses: 1SG.II want-EPIS-1SG.II feed-TR my village-POSS.
+Glosses: 1SG want-PAST-EPIS-1SG feed-APPL village-POSS-1SG
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -564,7 +564,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -572,7 +572,7 @@ Please gloss the following example in Gitxsan.
 Transcription: ii ji-da hlen-txw-'y diya
 Translation: "And if I moved," he said,
 ===RESPONSE===
-Glosses: and 1SG-move-COND say
+Glosses: and 1SG-move-COND say-3SG.SBJUNCT
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -587,7 +587,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -595,7 +595,7 @@ Please gloss the following example in Gitxsan.
 Transcription: "Ii jida hlentxwi'y ," diya ,
 Translation: "And if I moved," he said,
 ===RESPONSE===
-Glosses: 1SG FOC move-EPIS-CN , say-3SG.
+Glosses: 1SG move-EPIS-CN say-3SG.
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -610,7 +610,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -619,7 +619,8 @@ Transcription: dim ii gipaykw-hl bisde'y dim ii huut-hl x̲adaa hasak̲-'y
 Translation: "the grouse would fly away, and the moose that I want would run away."
 ===RESPONSE===
 Glosses: dim ii gipaykw-hl bisde'y dim ii huut-hl x̲adaa hasak̲-'y
-the SG grouse-3.II fly-PROSP away the SG moose-3.II run-PROSP away
+dim ii gipaykw-hl bisde'y - the grouse would fly away
+dim ii huut-hl x̲adaa hasak̲-'y - and the moose that I want would run away
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -634,7 +635,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -642,7 +643,7 @@ Please gloss the following example in Gitxsan.
 Transcription: "dim ii gipaykwhl bisde'y dim ii huuthl x̲adaa hasag̲a'y ."
 Translation: "the grouse would fly away, and the moose that I want would run away."
 ===RESPONSE===
-Glosses: the grouse 3.II fly-PROSP away and the moose 1SG.II want-PROSP run-PROSP away
+Glosses: ART grouse FUT fly-PROSP away and ART moose FUT run-PROSP away DEM 1SG want-FUT-CN.
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -657,7 +658,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -665,7 +666,7 @@ Please gloss the following example in Gitxsan.
 Transcription: ii 'nii win nee-dii x̲s-del-txw-s Man
 Translation: And Man didn't make a sound.
 ===RESPONSE===
-Glosses: and NEG make sound-PST-3SG Man
+Glosses: and NEG make sound-PST-3SG man
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -680,7 +681,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -688,7 +689,7 @@ Please gloss the following example in Gitxsan.
 Transcription: Ii 'nii win needii x̲sdeltxws Man .
 Translation: And Man didn't make a sound.
 ===RESPONSE===
-Glosses: and NEG=FOC make sound MAN
+Glosses: and NEG=FOC make sound Man
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -703,7 +704,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -711,7 +712,7 @@ Please gloss the following example in Gitxsan.
 Transcription: disim t'aa 'nit gya'a-t 'nuu'm gya'a-t wila jep-t-i-'m gya'a-t wila wil-'y
 Translation: He sat still, he looked at us, he looked at what we were doing, he looked at how we were.
 ===RESPONSE===
-Glosses: 3SG.II sit still 1PL.II look-TR-3.II 1PL.II look-TR CN do-PROG-1.PL look-TR CN look how-1SG.
+Glosses: 3SG sit still 1PL look-TR 1PL.ACC look-TR what do-PROG-1PL look-TR how be-1PL
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -726,7 +727,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -734,7 +735,7 @@ Please gloss the following example in Gitxsan.
 Transcription: Disim t'aa 'nit , gya'at 'nuu'm , gya'at wila jepdi'm , gya'at wila wili'y .
 Translation: He sat still, he looked at us, he looked at what we were doing, he looked at how we were.
 ===RESPONSE===
-Glosses: 3SG.II sit still, 3SG.II look 1PL.II, 3SG.II look 1PL.II do-PROSP, 3SG.II look 1PL.II be-PROSP
+Glosses: 3SG sit still, 3SG look 1PL, 3SG look 1PL do, 3SG look 1PL be.
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -749,7 +750,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -757,7 +758,7 @@ Please gloss the following example in Gitxsan.
 Transcription: ii-n dip gidax̲ gu-hl wil-t
 Translation: And we asked what he did.
 ===RESPONSE===
-Glosses: and-1PL.II ask what-3.III do-PAST
+Glosses: and-1PL ask what 3SG-do-PAST
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -772,7 +773,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -780,7 +781,7 @@ Please gloss the following example in Gitxsan.
 Transcription: Iin dip gidax̲ guhl wilt .
 Translation: And we asked what he did.
 ===RESPONSE===
-Glosses: and 1PL.II ask what 3SG.II do
+Glosses: and 1PL ask what 3SG do
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -795,7 +796,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -803,7 +804,7 @@ Please gloss the following example in Gitxsan.
 Transcription: gu-hl g̲ay guxw-i-n bisde'y ji ligi x̲adaa
 Translation: "What did you shoot? A grouse or a moose?"
 ===RESPONSE===
-Glosses: what-2SG shoot-PST-2SG grouse or moose Q
+Glosses: what-2SG shoot-PST-INTERR grouse or moose QPART
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -818,7 +819,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -826,7 +827,7 @@ Please gloss the following example in Gitxsan.
 Transcription: "Guhl g̲ay guxwin bisde'y ji ligi x̲adaa ?"
 Translation: "What did you shoot? A grouse or a moose?"
 ===RESPONSE===
-Glosses: what 2SG shoot-PST grouse or moose-QTAG
+Glosses: what PAST shoot-2SG grouse or moose-QTAG
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -841,7 +842,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -849,7 +850,7 @@ Please gloss the following example in Gitxsan.
 Transcription: ii 'nii win t'aa-t
 Translation: And then he sat down.
 ===RESPONSE===
-Glosses: and then 3.III sit down-VER
+Glosses: and then 3SG sit-PST
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -864,7 +865,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -872,7 +873,7 @@ Please gloss the following example in Gitxsan.
 Transcription: Ii 'nii win t'aat ,
 Translation: And then he sat down.
 ===RESPONSE===
-Glosses: and then 3.III sit down
+Glosses: and then 3SG sit down
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -887,7 +888,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -895,7 +896,7 @@ Please gloss the following example in Gitxsan.
 Transcription: ii he-t ji-da n guxw bisde'y
 Translation: And he said: "If I shoot the grouse,"
 ===RESPONSE===
-Glosses: and 3.I-SAY COMP 1SG shoot grouse-DEF
+Glosses: and 3SG-say COMP 1SG-shoot DET grouse-SG
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -910,7 +911,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -918,7 +919,7 @@ Please gloss the following example in Gitxsan.
 Transcription: Ii het: "Jida na guxw bisde'y ,"
 Translation: And he said: "If I shoot the grouse,"
 ===RESPONSE===
-Glosses: and he say-#(COMP) if 1SG shoot grouse-3.II
+Glosses: and 3SG say-#(PROSP)-3SG if 1SG shoot grouse-ACC.
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -933,7 +934,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -941,7 +942,7 @@ Please gloss the following example in Gitxsan.
 Transcription: ji-da n guxw bisde'y dim ii k̲'am ky'ul 'nii'y dim yook̲-xw-it
 Translation: "If I shoot the grouse, I will be the only one to eat."
 ===RESPONSE===
-Glosses: 1SG-I shoot DET grouse only eat FUT 1SG be-PROSP-1SG.
+Glosses: 1SG-IRR CN FOC shoot grouse only 1SG eat-FUT-1SG
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -956,7 +957,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -964,7 +965,7 @@ Please gloss the following example in Gitxsan.
 Transcription: "Jida na guxw bisde'y , dim ii k̲'am ky'ulhl 'nii'y dim yook̲xwit ."
 Translation: "If I shoot the grouse, I will be the only one to eat."
 ===RESPONSE===
-Glosses: if 1SG shoot grouse, only 1SG eat FUT be 3SG.II
+Glosses: if 1SG shoot grouse, only 1SG eat FUT 3SG.
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -979,7 +980,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -987,7 +988,7 @@ Please gloss the following example in Gitxsan.
 Transcription: ii ji-da gibee-'esxw-'y wag̲ayt dim an suwi yee-hl bisde'y
 Translation: "And if I wait until the grouse walks away,"
 ===RESPONSE===
-Glosses: and if-1SG wait-PROSP-CONNN grouse until away walk-3SG.
+Glosses: and if-1SG wait-PROSP until walk-3SG grouse away SUBJ I-IRR
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -1002,7 +1003,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -1010,7 +1011,7 @@ Please gloss the following example in Gitxsan.
 Transcription: "Ii jida gibee'esxwi'y waayt dim an suwi yeehl bisde'y ,"
 Translation: "And if I wait until the grouse walks away,"
 ===RESPONSE===
-Glosses: 1SG CCNJ wait-PROSP grouse-LOC walk-3.II until away-AX
+Glosses: and if grouse walk-PROSP wait-1SG until away go-3SG,
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -1025,7 +1026,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -1033,7 +1034,7 @@ Please gloss the following example in Gitxsan.
 Transcription: dim ii-n da'ak̲hlxw dim hogwin yee g̲a'a-hl ts'uusk-m hogwin dulp-in-sxw-'y g̲a'a-hl x̲adaa
 Translation: "Then I'll be able to walk right to, to get real close to the moose."
 ===RESPONSE===
-Glosses: then 1SG.II-FUT be.able moose right-to walk-PROSP be.able close-TR-1SG.II-FUT moose to
+Glosses: then 1SG-FUT can walk right to moose-LOC get-REAL-close-PROG to moose right
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -1048,7 +1049,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -1056,7 +1057,7 @@ Please gloss the following example in Gitxsan.
 Transcription: "dim iin da'ak̲hlxw dim hogwin yee g̲a'ahl , ts'uusgim hogwin dulbinsxwi'y g̲a'ahl x̲adaa ."
 Translation: "Then I'll be able to walk right to, to get real close to the moose."
 ===RESPONSE===
-Glosses: then 1SG FUT=3 be_able_to walk right_to, right_to get real_close_to 3SG.II moose
+Glosses: then 1SG FUT=3 walk-IPFV right to 1SG FUT=3 moose-LOC CN get-REAL close to be able to
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -1071,7 +1072,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -1079,7 +1080,7 @@ Please gloss the following example in Gitxsan.
 Transcription: dim ii-n da'ak̲hlxw dim n guxw-t dim ii tx̲ook̲-xw-hl walk̲'a 'nit-hl gyet
 Translation: "And then I will be able to shoot it, and then all the people will eat."
 ===RESPONSE===
-Glosses: and then-1SG.II-PROSP thus 1SG AX-shoot-TR-PROSP all 3PL.II CN-eat
+Glosses: and then-ADV 1SG-FUT can and then all DET person-PL and then 1SG shoot-TR-FUT be.able-ADV eat
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -1094,7 +1095,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -1102,7 +1103,7 @@ Please gloss the following example in Gitxsan.
 Transcription: "Dim iin da'ak̲hlxw dim an guxwt , dim ii tx̲ook̲xwhl walk̲'a 'nihl gyet ."
 Translation: "And then I will be able to shoot it, and then all the people will eat."
 ===RESPONSE===
-Glosses: and then 1SG FUT=3 be.able shoot-PROSP it, and then all the people eat-FUT.
+Glosses: and then shoot-able will be I it, and then all the people eat will.
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -1117,7 +1118,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -1125,7 +1126,7 @@ Please gloss the following example in Gitxsan.
 Transcription: ii 'nii win hlis-xw-t mehl-i-t loo-'m ii daa'whl ha'w-t
 Translation: After he finished telling us, he went home.
 ===RESPONSE===
-Glosses: after 3SG.II finish-tell-IPFV 1PL.II-go-IPFV home-LOC 3SG.II go-home-IPFV
+Glosses: after 3SG finish-tell-ANTIP 1PL-OBL-LOC go-3SG home 3SG arrive-3SG
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -1140,7 +1141,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -1148,7 +1149,7 @@ Please gloss the following example in Gitxsan.
 Transcription: Ii 'nii win hlisxwt mehlit loo'm ii daa'whl ha'wt .
 Translation: After he finished telling us, he went home.
 ===RESPONSE===
-Glosses: 1SG DEM.PROX tell finish-IPFV 1PL.II go-3.III home 3.III after
+Glosses: after 3SG finish tell 1PL go home
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -1163,7 +1164,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -1171,7 +1172,7 @@ Please gloss the following example in Gitxsan.
 Transcription: ii hlaa gilbil sa hlis-it saa daa'whl-it dis wil-hl n heksim-hox̲ gya'a-t
 Translation: And then after two days (had passed) I saw him again.
 ===RESPONSE===
-Glosses: and then day two after-#(PROSP) again him see-1SG.II
+Glosses: and then day two after-#(PROSP) again see-1SG 3SG(-(PAST))
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -1186,7 +1187,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -1194,7 +1195,7 @@ Please gloss the following example in Gitxsan.
 Transcription: Ii hlaa gilbil sa hlisit saa daa'whlit dis wihl na heksimox̲ gya'at .
 Translation: And then after two days (had passed) I saw him again.
 ===RESPONSE===
-Glosses: and then after two day-PL after see-IPFV 1SG him again
+Glosses: and then day two after see again 1SG him
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -1209,7 +1210,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -1217,7 +1218,7 @@ Please gloss the following example in Gitxsan.
 Transcription: ii hugwin bax̲-'y g̲o'o-t ii 'nii win he-'y loo-t
 Translation: And I ran toward him, and I said to him:
 ===RESPONSE===
-Glosses: and run-1SG.SG toward-3.SG.II and say-1SG.SG to-3.SG.II
+Glosses: and run-1SG toward-3SG and say-1SG to-3SG
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -1232,7 +1233,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -1240,7 +1241,7 @@ Please gloss the following example in Gitxsan.
 Transcription: Ii hogwin bax̲a'y g̲o'ot , ii 'nii win he'y loot:
 Translation: And I ran toward him, and I said to him:
 ===RESPONSE===
-Glosses: and run-1SG toward-3SG him, and say-1SG to him
+Glosses: and run-1SG toward-3SG say-1SG to him
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -1255,7 +1256,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -1263,7 +1264,7 @@ Please gloss the following example in Gitxsan.
 Transcription: nee-m da'ak̲hlxw dim-ma mehl-i-hl wila wil-hl bisde'y gi
 Translation: "Can you tell what happened about the grouse?"
 ===RESPONSE===
-Glosses: know-2SG Q grouse-LOC happen-PST-3SG what tell-2SG can-Q
+Glosses: know-2SG what grouse-LOC happen-PAST-3SG about tell-2SG can-Q
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -1278,7 +1279,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -1286,7 +1287,7 @@ Please gloss the following example in Gitxsan.
 Transcription: "Neema da'ak̲hlxw dima mehlihl wila wihl bisde'yg i ?"
 Translation: "Can you tell what happened about the grouse?"
 ===RESPONSE===
-Glosses: know-2SG Q grouse happen-3SG what about PART
+Glosses: know-2SG-ANTIP what happen-3SG grouse about PART
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -1301,7 +1302,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -1309,7 +1310,7 @@ Please gloss the following example in Gitxsan.
 Transcription: ii 'nii win he-t dim hogwin kw'itxw 'nii'y g̲a'a-hl wilp-s nox̲-n dim ii-n mehl-i-t loo-n
 Translation: And then he said: "I will be over at your mom's house and I will tell you."
 ===RESPONSE===
-Glosses: and then 3SG.II say-FUT over-LOC mother-POSS house-LOC 2SG.AX 3SG.II-FUT tell-TR 1SG.II
+Glosses: and then 3SG say-3SG FUT=1SG LOC=CN mother-POSS house at 2SG-DAT tell-1SG FUT 3SG-ACC say-IPFV-3SG SUBSEQ
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -1324,7 +1325,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -1332,7 +1333,7 @@ Please gloss the following example in Gitxsan.
 Transcription: Ii 'nii win het , "Dim hogwin kw'itxw 'nii'y g̲a'ahl wilps nox̲on , dim iin mehlit loon ."
 Translation: And then he said: "I will be over at your mom's house and I will tell you."
 ===RESPONSE===
-Glosses: and then 3.II say #(PROSP) 1SG.II=CN , "DIM hog=win come 1SG.II=CN=FOC mother POSS-house , 3.II 1SG tell you"
+Glosses: and then 3SG say-PROSP , DIM hogwin come-PROSP 1SG=CN say-PROSP 2SG=CN , 3SG be at mother house , DIM 1SG tell-FUT 2SG
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -1347,7 +1348,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -1355,7 +1356,7 @@ Please gloss the following example in Gitxsan.
 Transcription: ii gukws ha'w-'y ii n gibe-'esxw-'y loo-t ii-t mehl-i-hl wila wil-hl bisde'y
 Translation: And I went home and waited for him, and then he told me about the grouse.
 ===RESPONSE===
-Glosses: and go-1SG.II home-LOC and wait-1SG.II 3.III-ACC and then tell-3SG.II grouse about it
+Glosses: and go-1SG home-LOC and wait-1SG-IPFV 3SG-ACC and then tell-3SG-IPFV 1SG-GEN grouse about
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -1370,7 +1371,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -1378,7 +1379,7 @@ Please gloss the following example in Gitxsan.
 Transcription: Ii gukws ha'wi'y ii na gibee'esxwi'y loot , iit mehlihl wila wihl bisde'y .
 Translation: And I went home and waited for him, and then he told me about the grouse.
 ===RESPONSE===
-Glosses: 1SG go home and wait for 3SG tell 1SG about grouse
+Glosses: and go-1SG home and wait-1SG for 3SG.ANTP-ACC then tell-3SG 1SG about grouse
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -1393,7 +1394,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -1401,7 +1402,7 @@ Please gloss the following example in Gitxsan.
 Transcription: ii yukw-t mehl-i-t ii 'nii win he-t
 Translation: 'And when he was telling it (the story), and then he says:'
 ===RESPONSE===
-Glosses: and tell-PST-3SG and then say-3SG.CONJ and then win he-3SG
+Glosses: and tell-EPIS-3SG and then say-3SG and then win he-3SG
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -1416,7 +1417,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -1424,7 +1425,7 @@ Please gloss the following example in Gitxsan.
 Transcription: Ii yukwt mehlit , ii 'nii win het ,
 Translation: 'And when he was telling it (the story), and then he says:'
 ===RESPONSE===
-Glosses: 1SG IPFV tell-3SG.II story, 1SG then say-3SG.II
+Glosses: and tell-IPFV story and then say-3SG
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -1439,7 +1440,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -1447,7 +1448,7 @@ Please gloss the following example in Gitxsan.
 Transcription: yukw-hl silin-asxw-'y ii hasak̲-'m a-loo-hl x̲adaa
 Translation: "I was hunting and we wanted to get the moose."
 ===RESPONSE===
-Glosses: hunt-PST 1SG-PROSP-CONNN and 1PL.II-want-PST moose get-INF
+Glosses: hunt-PST moose-ACC-PL 1SG want-PROSP 1PL-CN get-FUT moose
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -1462,7 +1463,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -1470,7 +1471,7 @@ Please gloss the following example in Gitxsan.
 Transcription: "Yukwhl silinasxwi'y ii hasag̲a'm aloohl x̲adaa ."
 Translation: "I was hunting and we wanted to get the moose."
 ===RESPONSE===
-Glosses: hunt-PROG=CN 1SG and want-PROSP=3.I 1PL.II moose get-PROSP 3.III
+Glosses: hunt-PROG 1SG want-PROSP=3PL and moose get-INF.
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -1485,7 +1486,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -1493,7 +1494,7 @@ Please gloss the following example in Gitxsan.
 Transcription: ii hasak̲-'m dim tx̲ook-in walk̲'a 'nit-hl gyet ii sg̲a t'aa-hl bisde'y
 Translation: "And we wanted to feed all the people, but the grouse was in the way."
 ===RESPONSE===
-Glosses: and want-1PL.INCL all people-ACC feed but grouse-ERG way-LOC be-PAST
+Glosses: and want-1PL all person-OBJ feed-PROSP but grouse-OBJ way-LOC be-PAST
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -1508,7 +1509,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -1516,7 +1517,7 @@ Please gloss the following example in Gitxsan.
 Transcription: "Ii hasag̲a'm dim tx̲oog̲an walk̲'a 'nihl gyet , ii sg̲a t'aahl bisde'y ."
 Translation: "And we wanted to feed all the people, but the grouse was in the way."
 ===RESPONSE===
-Glosses: 1SG PROSP=DM want-EPIS-CN all person-PL feed-PROSP but grouse way-LOC be-PAST.
+Glosses: 1SG want-EPIS CN feed-PROSP all person-PL but grouse way-LOC be-PAST.
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -1531,7 +1532,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -1539,7 +1540,7 @@ Please gloss the following example in Gitxsan.
 Transcription: ii ji-da hlen-txw-'y dim ii gipaykw bisde'y
 Translation: "If I moved, the grouse would fly."
 ===RESPONSE===
-Glosses: if 1SG-move-COND grouse-PL-3.II fly if 1SG-move-COND grouse-PL-3.II fly
+Glosses: if 1SG-move-EPIS grouse 3SG-fly-FUT 
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -1554,7 +1555,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -1562,7 +1563,7 @@ Please gloss the following example in Gitxsan.
 Transcription: "Ii jida hlentxwi'y dim ii gipaykw bisde'y ."
 Translation: "If I moved, the grouse would fly."
 ===RESPONSE===
-Glosses: 1SG PROSP move-EPIS-3.II grouse 3.III PROSP fly-EPIS-3.II
+Glosses: 1SG move-IF grouse-PL fly-COND
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -1577,7 +1578,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -1585,7 +1586,7 @@ Please gloss the following example in Gitxsan.
 Transcription: ii 'nii win he-s Man betl'a betl'a betl'a betl' diya dim wila gipaykw-hl bisde'y
 Translation: Man said that the grouse started to fly and made the sound betl'a betl'a betl'a betl'a betl'.
 ===RESPONSE===
-Glosses: man say 3.I grouse-TR start fly and sound betl'a betl'a betl'a betl'a make-PST.
+Glosses: man say 3SG-ANTIP grouse start fly and sound betl'a betl'a betl'a betl'a make-PST happen-PST
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -1600,7 +1601,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -1608,7 +1609,7 @@ Please gloss the following example in Gitxsan.
 Transcription: Ii 'nii win hes Man , betl'a betl'a betl'a betl', diya , dim wila gipaykwhl bisde'y .
 Translation: Man said that the grouse started to fly and made the sound betl'a betl'a betl'a betl'a betl'.
 ===RESPONSE===
-Glosses: man say PAST PROG grouse - PL - start - IPFV fly and sound betl'a betl'a betl'a betl'a betl' make-PAST.
+Glosses: man say PAST PROG grouse - PL - START FLY - INCEP and SOUND betl'a betl'a betl'a betl'a betl'a make - PAST
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -1623,7 +1624,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -1631,7 +1632,7 @@ Please gloss the following example in Gitxsan.
 Transcription: sim 'nii win hlen-txw-'y diya sim 'nii win hlen-txw-'y kw'es-in-'y-hl g̲an
 Translation: "As soon as I moved," he said, "as soon as I moved, I broke a stick.
 ===RESPONSE===
-Glosses: as soon as 1SG move-IPFV-EPIS say as soon as 1SG move-IPFV-EPIS stick-break-PST say
+Glosses: as soon as 1SG move-EPIS-IRR say as soon as 1SG move-EPIS-IRR stick-break-TR say
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -1646,7 +1647,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -1654,8 +1655,7 @@ Please gloss the following example in Gitxsan.
 Transcription: "Sim 'nii win hlentxwi'y ," diya , "sim 'nii win hlentxwi'y , kw'esini'yhl g̲an ."
 Translation: "As soon as I moved," he said, "as soon as I moved, I broke a stick.
 ===RESPONSE===
-Glosses: sim 'nii win hlentxwi'y , - diya , sim 'nii win hlentxwi'y , kw'esini'yhl g̲an .
-as soon as 1SG move - say , as soon as 1SG move , stick break - PST .
+Glosses: sim as soon as 'nii I win moved hlentxwi'y broke - diya he - kw'esini'yhl stick g̲an a
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -1670,7 +1670,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -1678,7 +1678,7 @@ Please gloss the following example in Gitxsan.
 Transcription: ii ts'eek̲xw-hl win-dii-t liipaykw-hl bisde'y ii 'nii win gipaykw-diit ii-ma x̲a'ni-t betl'a betl'a betl'a betl'a betl'
 Translation: "It's noisy when the grouse flies, and you can hear them when they fly: betl'a betl'a betl'a betl'a betl'." || "It's noisy when the grouse flies, and when they fly you can hear it: betl'a betl'a betl'a betl'a betl'."
 ===RESPONSE===
-Glosses: and noisy-when fly-3PL grouse-when hear-2SG them-when fly-3PL and noisy-when fly-3PL grouse-when hear-3SG it-when fly-3PL betl'a betl'a betl'a betl'a betl'
+Glosses: III noisy-EPIS fly-3PL-INS grouse-EPIS hear-3SG-INS when they fly betl'a betl'a betl'a betl'a betl'a
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -1693,7 +1693,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -1701,7 +1701,7 @@ Please gloss the following example in Gitxsan.
 Transcription: "Ii ts'eek̲xwhl windiit liipaykwhl bisde'y , ii 'nii win gipaykwdiit iima x̲a'nit: betl'a betl'a betl'a betl'a betl'."
 Translation: "It's noisy when the grouse flies, and you can hear them when they fly: betl'a betl'a betl'a betl'a betl'." || "It's noisy when the grouse flies, and when they fly you can hear it: betl'a betl'a betl'a betl'a betl'."
 ===RESPONSE===
-Glosses: 1SG IPFV.noisy-when grouse fly-3PL and 2SG can hear-3PL when fly-3PL betl'a betl'a betl'a betl'a betl'
+Glosses: 1SG noisy-ADV grouse-when fly-3SG noisy-ADV ANTIP-hear-2SG when fly-3PL: betl'a betl'a betl'a betl'a betl'
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -1716,7 +1716,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -1724,7 +1724,7 @@ Please gloss the following example in Gitxsan.
 Transcription: ii nee-dii hasak̲-'y dim an hlen-txw-'y dim wila huut-hl x̲adaa siilin-asxw-'y win sg̲a t'aa-hl bisde'y
 Translation: "So I didn't want to move, so that the moose, (my game,) will not run away because of the grouse being there."
 ===RESPONSE===
-Glosses: so NEG=FOC want-1SG.II move FOC=1 moose CN my game CN not run-3.II because grouse be-LOC=CN there
+Glosses: so NEG=FOC want-1SG move-ANTIP 1SG CN moose CN 3SG grouse-LOC CN 3SG CN run-NEG=FOC be.because
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -1739,7 +1739,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -1747,7 +1747,7 @@ Please gloss the following example in Gitxsan.
 Transcription: "Ii needii hasag̲a'y dim an hlentxwi'y dim wila huuthl x̲adaa , siilinasxwi'y , win sg̲a t'aahl bisde'y ."
 Translation: "So I didn't want to move, so that the moose, (my game,) will not run away because of the grouse being there."
 ===RESPONSE===
-Glosses: 1SG need-NOT want-NEG move to the moose my game not run away because-of the grouse be-LOC
+Glosses: 1SG need-NEG PROSP move NEG want-EPIS CN LOC moose CN POSS game NEG run-IRR CN DEM grouse LOC-CN be-IRR.
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -1762,7 +1762,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -1770,7 +1770,7 @@ Please gloss the following example in Gitxsan.
 Transcription: win-na k'uxw gya'a-s Man Jacob Brown ii n hox̲ gidax̲-t nee-m da'ak̲hlxw dim-ma mehl-i-hl wila wil-hl betl'a betl' loo-'m-aa
 Translation: Every time I see Man I ask him, "Will you tell us the story about betl'a betl'?"
 ===RESPONSE===
-Glosses: every time man Jacob Brown 1SG see-1SG 1SG ask-3SG 3SG.OBJ 1PL.II story-ACC tell-FUT-2SG FOC betl'a betl' say-1PL-QUES
+Glosses: every-time man Jacob Brown 1SG see-TR 3SG ACC ask-1SG FUT CN story CN REL-CN betl'a betl' say-2SG-3SG-Q
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -1785,7 +1785,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -1793,7 +1793,7 @@ Please gloss the following example in Gitxsan.
 Transcription: Wina k'uxw gya'as Man , Jacob Brown , ii na hox̲ gidax̲t , "Neem da'ak̲hlxw dima mehlihl wila wihl betl'a betl' loo'maa ?"
 Translation: Every time I see Man I ask him, "Will you tell us the story about betl'a betl'?"
 ===RESPONSE===
-Glosses: every time MAN see-1SG.II , Jacob Brown , and 1SG ask-3SG.II , "FUT tell-2SG PROSP story about betl'a betl'" ?
+Glosses: every time see Man , Jacob Brown , II NA ask him , "will you tell us the story about betl'a betl' ?"
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -1808,7 +1808,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -1816,7 +1816,7 @@ Please gloss the following example in Gitxsan.
 Transcription: ii 'nii win si-t'aa-'ma-m si-we-t-i-'y-t Man Betl'a Betl'
 Translation: This is when Man named me Betl'a Betl'.
 ===RESPONSE===
-Glosses: DEM.PROX COP 1SG.II when 3.III-name-1SG.II 3.III-1SG.II-3.I-3SG.II Man Betl'a Betl'
+Glosses: DEM COP 1SG-NAME 3SG-IPFV-say-TR 3SG-1SG-OBL-3SG-TR Man Betl'a Betl'
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -1831,7 +1831,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -1839,7 +1839,7 @@ Please gloss the following example in Gitxsan.
 Transcription: Ii 'nii win sit'aa'mam siwetdi'yt Man Betl'a Betl'.
 Translation: This is when Man named me Betl'a Betl'.
 ===RESPONSE===
-Glosses: 1SG DEM.PROX be-when Man name-3SG.II Betl'a Betl'
+Glosses: DEM COP when name-3SG=me Man Betl'a Betl'
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -1854,7 +1854,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -1862,7 +1862,7 @@ Please gloss the following example in Gitxsan.
 Transcription: 'nii g̲an wil-hl we-'y gyuu'n a-s Betl'a Betl'
 Translation: That's why I am named Betl'a Betl' now.
 ===RESPONSE===
-Glosses: DEM.PROX COP 1SG name-PROSP now Betl'a Betl' Betl'a Betl'
+Glosses: DEM=PROX why name-1SG now 1SG=PN Betl'a Betl'
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -1877,7 +1877,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -1885,7 +1885,7 @@ Please gloss the following example in Gitxsan.
 Transcription: 'Nii g̲an wihl we'y gyuu'n as Betl'a Betl'.
 Translation: That's why I am named Betl'a Betl' now.
 ===RESPONSE===
-Glosses: DEM.PROX COP 1SG name now Betl'a Betl'
+Glosses: DEM=SG why name PST-1SG now Betl'a Betl'
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -1900,7 +1900,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -1908,7 +1908,7 @@ Please gloss the following example in Gitxsan.
 Transcription: g̲abii-hl he-'y
 Translation: That's as much as I have to say.
 ===RESPONSE===
-Glosses: that-FOC 1SG-have-1SG.II
+Glosses: DEM=PROX-FOC 3SG=CN-VER
 ===SYSTEM PROMPT===
 You are an expert documentary linguist, specializing in Gitxsan. You are working on a documentation project for Gitxsan text, where you are creating annotated text corpora using the interlinear glossed text (IGT) and following the Leipzig glossing conventions.
 
@@ -1923,7 +1923,7 @@ Glosses: the gloss line for the transcribed text
 
 Glosses should use all caps lettering for functional morphemes and standard lettering for stem translations. Glosses for morphemes in a word should be separated by dashes, and words should be separated by spaces. For functional morphemes, you may use only the following glosses:
 
-#(PROSP), (#COMP), (#PROSP), )=CN, 1.I, 1.SG.=, 1PL.II, 1SG, 1SG.II, 2SG, 3.I, 3.II, 3.III, 3PL, 3PL.II, 3PL.INDP, 3SG.II, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC.NECESS, CN, CNTR, COMP, CONNN, DEM.PROX, DES, DESIDER, DISTR, DM, DWID, EPIS, FOC, FOC=1, FOC=3, FUT, FUT=3, IBM, INCEP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR.EVID, PREP, PREP=CN, PRIOR.EVID, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=3.I, PROSP=DM, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
+#(PROSP), (#COMP), (#PROSP), )=CN, 1PL, 1SG, 2SG, 3PL, 3SG, ANTIP, AX, CAUS1, CAUS2, CCNJ, CIRC, CN, CNTR, COMP, CONNN, DEM, DES, DESIDER, DISTR, DM, DWID, EPIS, EVID, FOC, FOC=1, FOC=3, FUT, FUT=3, I, IBM, II, III, INCEP, INDP, INS, IPFV, IPFV=EPIS=CN, IRR, IRR=3, LOC, LOC=CN, LVB, MANR, NECESS, NEG, NEG=FOC, NEG=FOC=3, NMLZ, OBL, PART, PASS, PCNJ, PN, PR, PREP, PREP=CN, PRIOR, PROG, PROG=CN, PROG[=CN], PROSP, PROSP=3, PROSP=DM, PROX, REAS, SELF, SG, SPT, SX, T, T=PN, TR, TR=CN, TR=PN, VAL, VER, VERUM, [#(PROSP), [(#COMP), [(PROSP), [PROG=CN, [PROSP
 
 ===PROMPT===
 Please gloss the following example in Gitxsan.
@@ -1931,4 +1931,4 @@ Please gloss the following example in Gitxsan.
 Transcription: G̲abiihl he'y .
 Translation: That's as much as I have to say.
 ===RESPONSE===
-Glosses: that-DEM.PROX be.enough-1SG say-1SG.
+Glosses: DEM=PROX speak-1SG.

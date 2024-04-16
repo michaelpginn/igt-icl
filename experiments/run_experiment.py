@@ -125,8 +125,8 @@ def run_experiment(glottocode: str,
 
     # Compile the list of glosses observed in the training data, if applicable
     if use_gloss_list is not None:
-        additional_data['gloss_list'] = _create_gloss_list(use_gloss_list,
-                                                           train_dataset)
+        gloss_list = _create_gloss_list(use_gloss_list, train_dataset)
+        additional_data['gloss_list'] = ', '.join(gloss_list)
 
     # Create a Retriever, if applicable
     retriever = None
