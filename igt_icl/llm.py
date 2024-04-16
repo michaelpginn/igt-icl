@@ -105,9 +105,12 @@ def gloss_with_llm(example: IGT,
                 `system_prompt`: The (hydrated) system prompt
                 `prompt`: The (hydrated) prompt
     """
+    print(additional_data)
     fewshot_examples = {'fewshot_examples': ' '.join(str(fewshot_examples))}
-    hydrated_system_prompt = system_prompt.hydrate(example.__dict__, additional_data, fewshot_examples)
-    hydrated_prompt = prompt.hydrate(example.__dict__, additional_data, fewshot_examples)
+    hydrated_system_prompt = system_prompt.hydrate(
+        example.__dict__, additional_data, fewshot_examples)
+    hydrated_prompt = prompt.hydrate(
+        example.__dict__, additional_data, fewshot_examples)
 
     if llm_type == 'openai':
         response, num_tokens_used = _run_openai_prompt(hydrated_system_prompt=hydrated_system_prompt,
