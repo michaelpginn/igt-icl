@@ -82,7 +82,7 @@ def run_experiment(glottocode: str,
                    retriever_key: str = None,
                    llm_type: str = 'openai',
                    model="gpt-3.5-turbo-0125",
-                   temperature=1,
+                   temperature=0,
                    seed=0):
     """Runs an experiment with a given language and prompt combination. Writes results to the specified `output_dir`.
 
@@ -134,6 +134,9 @@ def run_experiment(glottocode: str,
         retriever = Retriever.stock(
             'random', n_examples=3, dataset=glosslm_corpus['train'])
 
+    log_file = open(os.path.join(
+        output_dir, f"{glottocode}-log.out"), 'w', encoding='utf-8')
+
     # Create the inference function for the evaluation loop
     def _inference(example: Dict):
         igt = IGT.from_dict(example)
@@ -153,6 +156,7 @@ def run_experiment(glottocode: str,
                               model=model,
                               api_key=OPENAI_API_KEY,
                               temperature=temperature,
+                              log_file=log_file,
                               seed=seed)
 
     # Run evaluation and write to files
