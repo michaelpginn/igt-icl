@@ -1,24 +1,29 @@
 """Script for running experiments evaluating the various LLM strategies"""
-
-from typing import Callable, Dict, List, Tuple
 import os
 import sys
-from pathlib import Path
-from dotenv import load_dotenv
+import random
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 import json
 import re
+from pathlib import Path
+from typing import Callable, Dict, List, Tuple, Optional
 
 import datasets
-from tqdm.autonotebook import tqdm
 import fire
+from dotenv import load_dotenv
+from tqdm.autonotebook import tqdm
+
+from igt_icl import (IGT, Prompt, PromptType, Retriever, evaluate_igt,
+                     gloss_with_llm)
 
 project_root = Path(__file__).parent.parent
 sys.path.append(str(project_root))
 
-from igt_icl import gloss_with_llm, Prompt, PromptType, IGT, Retriever, evaluate_igt
 
 load_dotenv()
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+COHERE_API_KEY = os.getenv("CO_API_KEY")
 
 
 def _create_gloss_list(include_gloss_list: str, dataset: datasets.Dataset) -> List[str]:
@@ -75,12 +80,13 @@ def _eval_dataset(dataset: datasets.Dataset, inference_function: Callable[[Dict]
 
 
 def run_experiment(glottocode: str,
+                   segmented: bool,
                    system_prompt_key: str,
                    prompt_key: str,
                    output_dir: str,
-                   use_gloss_list: str = None,
-                   retriever_key: str = None,
-                   num_fewshot_examples: int = None,
+                   use_gloss_list: Optional[str] = None,
+                   retriever_key: Optional[str] = None,
+                   num_fewshot_examples: Optional[int] = None,
                    llm_type: str = 'openai',
                    model="gpt-3.5-turbo-0125",
                    temperature=0,
@@ -104,6 +110,8 @@ def run_experiment(glottocode: str,
 
     assert (num_fewshot_examples is None and retriever_key is None) or (
         num_fewshot_examples is not None and retriever_key is not None)
+    
+    random.seed(seed)
 
     # Load the appropriate eval dataset
     print("Loading dataset...")
@@ -119,6 +127,8 @@ def run_experiment(glottocode: str,
         raise Exception(
             f"Glottocode should be one of: {list(glottocodes_ID) + list(glottocodes_OOD)}")
 
+    # Filter by segmentation and glottocode
+    glosslm_corpus = glosslm_corpus.filter(lambda row: row["is_segmented"] == "yes" if segmented else row["is_segmented"] == "no")
     train_dataset = glosslm_corpus[f"train_{id_or_ood}"].filter(
         lambda row: row['glottocode'] == glottocode)
     eval_dataset = glosslm_corpus[f"eval_{id_or_ood}"].filter(
@@ -143,15 +153,18 @@ def run_experiment(glottocode: str,
                                     n_examples=num_fewshot_examples,
                                     dataset=dataset_filtered)
 
+    run_name = f"{glottocode}.{'un' if not segmented else ''}seg.{model}.{seed}"
     log_file = open(os.path.join(
-        output_dir, f"{glottocode}-log.out"), 'w', encoding='utf-8')
+        output_dir, f"{run_name}.log.out"), 'w', encoding='utf-8')
+
+    api_key = OPENAI_API_KEY if llm_type == 'openai' else COHERE_API_KEY
 
     # Create the inference function for the evaluation loop
     def _inference(example: Dict):
         igt = IGT.from_dict(example)
 
         # If appropriate, run retrieval and add examples to the prompt data payload
-        fewshot_examples = None
+        fewshot_examples = []
         if retriever is not None:
             fewshot_examples = retriever.retrieve(igt)
 
@@ -163,7 +176,7 @@ def run_experiment(glottocode: str,
                               fewshot_examples=fewshot_examples,
                               llm_type=llm_type,
                               model=model,
-                              api_key=OPENAI_API_KEY,
+                              api_key=api_key,
                               temperature=temperature,
                               log_file=log_file,
                               seed=seed)
@@ -171,13 +184,13 @@ def run_experiment(glottocode: str,
     # Run evaluation and write to files
     metrics, predictions, references = _eval_dataset(eval_dataset, _inference)
 
-    with open(os.path.join(output_dir, f"{glottocode}-metrics.json"), 'w', encoding='utf-8') as metrics_file:
+    with open(os.path.join(output_dir, f"{run_name}.metrics.json"), 'w', encoding='utf-8') as metrics_file:
         json.dump(metrics, metrics_file, ensure_ascii=False, indent=4)
 
     predictions_data = datasets.Dataset.from_dict(
         {'predicted_glosses': predictions, 'glosses': references})
     predictions_data.to_csv(os.path.join(
-        output_dir, f"{glottocode}-preds.tsv"), sep='\t')
+        output_dir, f"{run_name}.preds.tsv"), sep='\t')
 
 
 if __name__ == "__main__":
