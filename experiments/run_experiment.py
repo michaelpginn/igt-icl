@@ -2,6 +2,7 @@
 import os
 import sys
 import random
+import time 
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 import json
@@ -71,6 +72,8 @@ def _eval_dataset(dataset: datasets.Dataset, inference_function: Callable[[Dict]
         references.append(example['glosses'])
         predictions.append(response['response'])
         total_tokens += response['total_tokens']
+
+        time.sleep(1)
 
     metrics = evaluate_igt(predictions=predictions, references=references)
     metrics["total_tokens"] = total_tokens
@@ -149,7 +152,7 @@ def run_experiment(glottocode: str,
     if retriever_key is not None:
         dataset_filtered = glosslm_corpus[f'train_{id_or_ood}'].filter(lambda row:
                                                                        row['language'] == language)
-        retriever = Retriever.stock('random',
+        retriever = Retriever.stock(retriever_key,
                                     n_examples=num_fewshot_examples,
                                     dataset=dataset_filtered)
 

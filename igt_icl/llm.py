@@ -4,6 +4,7 @@ import cohere
 import re
 import os
 from io import TextIOWrapper
+from httpx import ReadTimeout
 
 from . import prompts
 from .igt import IGT
@@ -75,14 +76,26 @@ def _run_cohere_prompt(hydrated_system_prompt: str,
         Tuple[str, int]: The LLM chat completion and number of tokens used.
     """
     client = cohere.Client(api_key=api_key)
-    completion = client.chat(
-        model=model,
-        message=hydrated_prompt,
-        preamble=hydrated_system_prompt,
-        temperature=temperature,
-        p=1,
-        seed=seed
-    )
+
+    try:
+        completion = client.chat(
+            model=model,
+            message=hydrated_prompt,
+            preamble=hydrated_system_prompt,
+            temperature=temperature,
+            p=1,
+            seed=seed
+        )
+    except ReadTimeout:
+        # Try one more time
+        completion = client.chat(
+            model=model,
+            message=hydrated_prompt,
+            preamble=hydrated_system_prompt,
+            temperature=temperature,
+            p=1,
+            seed=seed
+        )
 
     if verbose:
         print(completion.meta)

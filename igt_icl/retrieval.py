@@ -3,6 +3,7 @@ from abc import ABC, abstractmethod
 import datasets
 from .igt import IGT
 
+datasets.utils.logging.disable_progress_bar()
 
 class Retriever(ABC):
     _stock_subclasses: Dict[str, Type['Retriever']] = {}
@@ -88,15 +89,35 @@ class WordRecallRetriever(Retriever):
         def _compute_recall(row):
             row_words = set(row['transcription'].split())
             matches = sum([1 for word in row_words if word in target_words])
-            return {"recall": matches / len(row_words)}
+            return {"recall": matches / len(target_words)}
 
         examples = self.dataset \
+                        .shuffle(seed=self.seed) \
                         .map(_compute_recall, batched=False) \
                         .sort("recall", reverse=True) \
                         .select(range(self.n_examples))
         return [IGT.from_dict(ex) for ex in examples] # type: ignore
         
 
+class WordPrecisionRetriever(Retriever):
+    """Selects examples that include the max number of words from the target string, divided by the # of words in the other example."""
+
+    def retrieve(self, example: IGT) -> List[IGT]:
+        target_words = set(example.transcription.split())
+
+        def _compute_precision(row):
+            row_words = row['transcription'].split()
+            matches = sum([1 for word in row_words if word in target_words])
+            return {"precision": matches / len(row_words)}
+
+        examples = self.dataset \
+                        .shuffle(seed=self.seed) \
+                        .map(_compute_precision, batched=False) \
+                        .sort("precision", reverse=True) \
+                        .select(range(self.n_examples))
+        return [IGT.from_dict(ex) for ex in examples] # type: ignore
+
 
 Retriever.register_class('random', RandomRetriever)
 Retriever.register_class('word_recall', WordRecallRetriever)
+Retriever.register_class('word_precision', WordRecallRetriever)

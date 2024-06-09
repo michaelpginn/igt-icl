@@ -1,13 +1,9 @@
-sh shots/glosslist/zeroshot-glosslist/run.sh natu1246
+for lang in gitx1241 lezg1247 natu1246 uspa1245
+do
+    # sh shots/glosslist/zeroshot-glosslist/run.sh 
 
-for shots in 1 2 3 5 10 30 50
-do    
-    sh "shots/glosslist/fewshot-$shots-glosslist/run.sh" natu1246
-done
-
-sh shots/no-glosslist/zeroshot/run.sh natu1246
-
-for shots in 1 2 3 5 10 30 50
-do    
-    sh "shots/no-glosslist/fewshot-$shots/run.sh" natu1246
+    for shots in 1 2 5 10 30 50
+    do    
+        sh "retrieval/word-recall/word-recall-$shots/run.sh" $lang
+    done
 done
