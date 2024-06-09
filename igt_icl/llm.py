@@ -196,8 +196,12 @@ def gloss_with_llm(example: IGT,
     if log_file is not None:
         log_file.write(f"===RESPONSE===\n{response}\n\n===END====\n\n\n\n")
 
+    response = _parse_response(response)
+    if isinstance(response, list):
+        response = response[0]
+
     return {
-        'response': _parse_response(response),
+        'response': response,
         'total_tokens': num_tokens_used,
         'system_prompt': hydrated_system_prompt,
         'prompt': hydrated_prompt

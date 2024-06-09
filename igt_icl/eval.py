@@ -13,7 +13,10 @@ from torchtext.data.metrics import bleu_score
 
 def _strip_gloss_punctuation(glosses: str):
     """Strips any punctuation from gloss string (assuming it is surrounded by spaces)"""
-    return re.sub(r"(\s|^)[^\w\s](\s|$)", " ", glosses).strip()
+    try:
+        return re.sub(r"(\s|^)[^\w\s](\s|$)", " ", glosses).strip()
+    except:
+        return ""
 
 
 def _eval_accuracy(pred: List[List[str]], gold: List[List[str]]) -> dict:
@@ -169,5 +172,5 @@ def evaluate_igt(
         **_eval_morpheme_glosses(
             pred_morphemes=pred_morphemes, gold_morphemes=gold_morphemes
         ),
-        'chrf': chrf_score['score'],
+        'chrf': chrf_score['score'], # type: ignore
     }

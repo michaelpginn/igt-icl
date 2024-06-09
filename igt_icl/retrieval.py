@@ -1,4 +1,4 @@
-from typing import Dict, List, Callable, Type, Union
+from typing import Dict, List, Callable, Type, Union, Optional
 from abc import ABC, abstractmethod
 import datasets
 from .igt import IGT
@@ -12,7 +12,8 @@ class Retriever(ABC):
 
     def __init__(self,
                  n_examples: int,
-                 dataset: Union[datasets.Dataset, str]):
+                 dataset: Union[datasets.Dataset, str],
+                 seed: Optional[int] = None):
         """Initializes a `Retriever`
 
         Args:
@@ -21,10 +22,11 @@ class Retriever(ABC):
         """
         super().__init__()
         self.n_examples = n_examples
+        self.seed = seed 
 
         if isinstance(dataset, str):
             if dataset == 'glosslm':
-                self.dataset = datasets.load_dataset("lecslab/glosslm-corpus")
+                self.dataset = datasets.load_dataset("lecslab/glosslm-corpus") # type: ignore
             else:
                 raise Exception(
                     "`dataset` should either be 'glosslm' or a `Dataset` object")
@@ -44,7 +46,8 @@ class Retriever(ABC):
     def stock(cls,
               method: str,
               n_examples: int,
-              dataset: Union[datasets.Dataset, str]) -> 'Retriever':
+              dataset: Union[datasets.Dataset, str],
+              seed: Optional[int] = None) -> 'Retriever':
         """Initializes a `Retriever` using a stock (built-in) subclass.
 
         Args:
@@ -54,7 +57,7 @@ class Retriever(ABC):
         """
         # Look at the _stock_subclasses, which is dynamically updated after subclasses are written
         if method in cls._stock_subclasses:
-            return cls._stock_subclasses[method](n_examples=n_examples, dataset=dataset)
+            return cls._stock_subclasses[method](n_examples=n_examples, dataset=dataset, seed=seed)
         else:
             raise ValueError("fNo stock class with key {key}")
 
@@ -71,9 +74,29 @@ class Retriever(ABC):
 class RandomRetriever(Retriever):
     def retrieve(self, example: IGT) -> List[IGT]:
         examples = self.dataset \
-                       .shuffle() \
+                       .shuffle(seed=self.seed) \
                        .select(range(self.n_examples))
-        return [IGT.from_dict(ex) for ex in examples]
+        return [IGT.from_dict(ex) for ex in examples] # type: ignore
+    
+
+class WordRecallRetriever(Retriever):
+    """Selects examples that include the max number of words from the target string, divided by the # of words in the other example."""
+
+    def retrieve(self, example: IGT) -> List[IGT]:
+        target_words = set(example.transcription.split())
+
+        def _compute_recall(row):
+            row_words = set(row['transcription'].split())
+            matches = sum([1 for word in row_words if word in target_words])
+            return {"recall": matches / len(row_words)}
+
+        examples = self.dataset \
+                        .map(_compute_recall, batched=False) \
+                        .sort("recall", reverse=True) \
+                        .select(range(self.n_examples))
+        return [IGT.from_dict(ex) for ex in examples] # type: ignore
+        
 
 
 Retriever.register_class('random', RandomRetriever)
+Retriever.register_class('word_recall', WordRecallRetriever)
