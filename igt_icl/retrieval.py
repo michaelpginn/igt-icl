@@ -81,7 +81,7 @@ class RandomRetriever(Retriever):
     
 
 class WordRecallRetriever(Retriever):
-    """Selects examples that include the max number of words from the target string, divided by the # of words in the other example."""
+    """Selects examples that include the max number of unique words from the target, divided by the # of words in the target."""
 
     def retrieve(self, example: IGT) -> List[IGT]:
         target_words = set(example.transcription.split())
@@ -100,7 +100,7 @@ class WordRecallRetriever(Retriever):
         
 
 class WordPrecisionRetriever(Retriever):
-    """Selects examples that include the max number of words from the target string, divided by the # of words in the other example."""
+    """Selects examples that include the max number of (non-unique) words from the target, divided by the # of words in the candidate example."""
 
     def retrieve(self, example: IGT) -> List[IGT]:
         target_words = set(example.transcription.split())
@@ -116,8 +116,34 @@ class WordPrecisionRetriever(Retriever):
                         .sort("precision", reverse=True) \
                         .select(range(self.n_examples))
         return [IGT.from_dict(ex) for ex in examples] # type: ignore
+    
+
+class MaxWordCoverageRetriever(Retriever):
+    """Selects examples that JOINTLY cover the maximum number of words in the target. Uses the greedy algorithm of Hochbaum (1997), which runs in O(n^2)"""
+
+    def retrieve(self, example: IGT) -> List[IGT]:
+        target_words = set(example.transcription.split())
+        examples = self.dataset.shuffle(seed=self.seed)
+
+        selected_examples = []
+
+        def _compute_recall(row):
+            row_words = set(row['transcription'].split())
+            matches = sum([1 for word in row_words if word in target_words])
+            return {"recall": matches / len(target_words)}
+
+        for _ in range(self.n_examples):
+            selected_example = examples \
+                                .filter(lambda row: row['transcription'] not in [r['transcription'] for r in selected_examples]) \
+                                .map(_compute_recall, batched=False) \
+                                .sort("recall", reverse=True)[0]
+            selected_examples.append(selected_example)
+            target_words.difference_update(set(selected_example['transcription'].split()))
+            
+        return [IGT.from_dict(ex) for ex in selected_examples] # type: ignore
 
 
 Retriever.register_class('random', RandomRetriever)
 Retriever.register_class('word_recall', WordRecallRetriever)
-Retriever.register_class('word_precision', WordRecallRetriever)
+Retriever.register_class('word_precision', WordPrecisionRetriever)
+Retriever.register_class('max_word_coverage', MaxWordCoverageRetriever)

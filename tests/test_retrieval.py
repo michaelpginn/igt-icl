@@ -17,11 +17,11 @@ class TestPrompts(unittest.TestCase):
                       glosses=None,)
 
     example_dataset = datasets.Dataset.from_dict({
-        "transcription": ["Hola señora", "estoy bien"],
-        "translation": ["Hello ma'am", "I'm fine"],
-        "glosses": ["hello lady-F.SG", "be.1SG well"],
-        "language": ["Spanish", "Spanish"],
-        "metalang": ["English", "Spanish"]
+        "transcription": ["Hola señora", "estoy bien", "Hola señor"],
+        "translation": ["Hello ma'am", "I'm fine", "Hello sir"],
+        "glosses": ["hello lady-F.SG", "be.1SG well", "hello man-M.SG"],
+        "language": ["Spanish", "Spanish", "Spanish"],
+        "metalang": ["English", "English", "English"]
     })
 
     def test_random_retriever(self):
@@ -40,6 +40,20 @@ class TestPrompts(unittest.TestCase):
                                     dataset=self.example_dataset)
         retrieved_examples = retriever.retrieve(self.example_row)
         self.assertListEqual(retrieved_examples, [IGT.from_dict(self.example_dataset[0])])
+
+    def test_max_word_coverage_retriever(self):
+        # Although example 0 also has a word in common with the target (Hola), we should not select it since it is covered by the first selection (example 2)
+        example_row = IGT(transcription="Hola señor bien",
+                      translation="Hello good sir",
+                      language="Spanish",
+                      metalang="English",
+                      glosses=None,)
+        
+        retriever = Retriever.stock(method="max_word_coverage", 
+                                    n_examples=2, 
+                                    dataset=self.example_dataset)
+        retrieved_examples = retriever.retrieve(example_row)
+        self.assertListEqual(retrieved_examples, [IGT.from_dict(self.example_dataset[i]) for i in [2, 1]])
 
 if __name__ == '__main__':
     unittest.main()
