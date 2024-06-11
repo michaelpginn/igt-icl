@@ -1,6 +1,7 @@
 from typing import Dict, List, Callable, Type, Union, Optional
 from abc import ABC, abstractmethod
 import datasets
+import evaluate
 from .igt import IGT
 
 datasets.utils.logging.disable_progress_bar()
@@ -138,12 +139,39 @@ class MaxWordCoverageRetriever(Retriever):
                                 .map(_compute_recall, batched=False) \
                                 .sort("recall", reverse=True)[0]
             selected_examples.append(selected_example)
+
+            # Remove the covered words
             target_words.difference_update(set(selected_example['transcription'].split()))
+
+            # If we no longer have any words to cover, reset
+            if len(target_words) == 0:
+                target_words = set(example.transcription.split())
             
         return [IGT.from_dict(ex) for ex in selected_examples] # type: ignore
+    
+
+class chrFRetriever(Retriever):
+    """Selects examples with the max chrF score to the target"""
+    chrf = evaluate.load("chrf")
+
+    def retrieve(self, example: IGT) -> List[IGT]:
+        def _compute_chrf(row):
+            chrf_score = self.chrf.compute(
+                predictions=[row['transcription']], references=[[example.transcription]], word_order=2
+            )
+            return {"chrF": chrf_score}
+
+        examples = self.dataset \
+                        .shuffle(seed=self.seed) \
+                        .map(_compute_chrf, batched=False) \
+                        .sort("chrF", reverse=True) \
+                        .select(range(self.n_examples))
+        return [IGT.from_dict(ex) for ex in examples] # type: ignore
+        
 
 
 Retriever.register_class('random', RandomRetriever)
 Retriever.register_class('word_recall', WordRecallRetriever)
 Retriever.register_class('word_precision', WordPrecisionRetriever)
 Retriever.register_class('max_word_coverage', MaxWordCoverageRetriever)
+Retriever.register_class('chrf', chrFRetriever)
