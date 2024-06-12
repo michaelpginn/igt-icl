@@ -1,0 +1,43 @@
+predicted_glosses	glosses
+when IPFV-1SG.II young come.over-ANTIP-3SG.II when come.over-ANTIP-3SG.II DEM-CN REL live-3SG.II LOC-CN Gitsegyukla CCNJ still young-CN IPFV-1SG.II young-CN when DEM-CN REL come.over-ANTIP-3SG.II LOC-CN Gitsegyukla	still IPFV-CN small-little-1SG.II still small-little-1SG.II time COMP-CN toward come-CN PART relative PREP-OBL-CN LOC-CN Gitsegyukla
+IPFV-3PL.II still live-IPFV-3PL.II LOC-PL house POSS-3/3PL.II mother father COMP-3PL.II	still IPFV-CN live-1PL.II LOC-CN in house-PN mother-1PL.II PCNJ father-1PL.II
+CCNJ over come-3SG.II REF call-PASS-3SG.II Man COMP over come-3SG.II Jacob Brown	CCNJ toward come-PN Man-CN name-3.II Man toward arrive Jacob Brown
+CCNJ want-3SG.II PROSP tell-CN story REL when PROSP hunt-3SG.II	CCNJ want-3.II PROSP-3.I tell-T-CN MANR LVB-3.II COMP IPFV-CN hunt-ANTIP-3.II
+CCNJ INCEP IPFV-CN go-3SG.II DEM PROSP fish	CCNJ INCEP IPFV PROSP away go-3.II
+CCNJ-3.III take-3.II all PROSP use-INF PROSP catch-INF what hunt-CN	CCNJ-3.I take.PL-CN all 3.III-CN CNT.AMT-CN PROSP use-TR-3.II PROSP MANR CIRC.PSBL hunt-ANTIP-3.II
+CCNJ want-3SG.M 3.I PROSP tell-3PL.II 1PL.II how 3.I do-PROSP-3SG.M	CCNJ want-3.II PROSP-3.I tell-T-3.II OBL-1PL.II MANR LVB-3.II
+CCNJ make-TR-3.II CCNJ sit-CAUS-3PL.II 1.I-CCNJ LOC-CN COMP-3SG.II brother-PL-POSS sister-PL-POSS	CCNJ-3.I sit.PL-T-1PL.II sit-T-TR-3.II 1PL.III 1SG.III PCNJ-CN PL-sibling-PASS-1SG.II
+CCNJ on say-3SG.II PROSP tell-TR-1PL.II DEM	CCNJ on COMP say-3.II PROSP tell-T-TR-1SG.II PN-DEM.PROX OBL-2SG.II
+IPFV-CN go-1SG.II PROSP hunt-TR-1SG.II CCNJ DEM be.there-PAST-3.III CCNJ.FEM grouse-CN CCNJ DEM be.in.the.way-PAST-3.III CCNJ say-PAST-3SG.M	IPFV-CN go-1SG.II PROSP hunt-ANTIP-1SG.II CCNJ sit-CN grouse block.way sit-CN grouse QUOT.3SG 3.III
+CCNJ 1.I see-CN CN moose	CCNJ 1.I see-CN moose
+IPFV-CN want-1SG.II PROSP feed-1SG.II DEF village	IPFV-CN want-1SG.II PROSP 1.I eat-CAUS2-CN contain-village.people-1SG.II
+"""CCNJ COND move-PASS-1SG.II"" say-3SG.II"	CCNJ IRR-SPT move-PASS-1SG.II QUOT.3SG
+PROSP CCNJ IPFV-CN fly.away-CN grouse PROSP CCNJ DES run.away-CN moose REL.PROSP 1SG.II-ERG DES	PROSP CCNJ fly-CN grouse PROSP CCNJ flee.PL-CN moose want-1SG.II
+CCNJ on NEG-FOC make-ANTIP-3SG.III sound Man	CCNJ on COMP NEG-FOC SUPER-make.noise-PASS-PN Man
+sit-3.III still-3.III AX-3.III look-TR-3SG.III OBL-1PL look-TR-3SG.III OBL-CN how LVB-1PL be-CN	keep.on sit 3.III see-3.II 1PL.III see-3.II MANR make-T-TR-1PL.II see-3.II MANR LVB-1SG.II
+CCNJ DEM man do-Q what	CCNJ-1.I 1PL.I ask what-CN LVB-3.II
+what-INT bird-PL-OBL or moose-OBL Q-2SG shoot-II	what-CN CONTR shoot-TR-2SG.II grouse IRR DWID moose
+CCNJ on-INS sit-TR-3MS	CCNJ on COMP sit-3.II
+CCNJ say-CN COND 1.I-ERG shoot-CN grouse	CCNJ say-3.II IRR-SPT 1.I shoot grouse
+if follow-CN 1.I shoot-CN grouse PROSP 1.I-CCNJ be.alone eat-FUT-1SG.II	IRR-SPT 1.I shoot grouse PROSP CCNJ only one.HUM 1SG.III PROSP eat-PASS-SX
+and if 1SG.II wait-3SG.II PROSP CON until DEM walk-TR-3SG.II grouse	CCNJ IRR-SPT wait-ANTIP-1SG.II completely PROSP NMLZ away go-CN grouse
+PROSP LVB-1SG.II INDEF near PROSP stand-CN moose PROSP VER close-TR-CN moose IPFV-CN stand-PASS-1SG.II	PROSP CCNJ-1.I CIRC.PSBL PROSP toward go LOC-CN little-ATTR toward close-CAUS2-ANTIP-1SG.II LOC-CN moose
+PROSP in ABIL-1SG.II shoot-PASS-1SG.II PROSP CCNJ all people eat-PASS-PL	PROSP CCNJ-1.I CIRC.PSBL PROSP 1.I shoot-3.II PROSP CCNJ eat.PL-PASS-CN all 3.III-CN people
+CCNJ on finish-CN tell-3SG.M.O-CN DAT-1PL.II CCNJ go-3SG.M.O home	CCNJ on COMP finish-PASS-3.I tell-T-3.II OBL-1PL.II CCNJ leave go.home-3.II
+CCNJ INCEP two day with three.days.PASS-PL CCNJ 1.I see.again-1SG.II OBL-CN him	CCNJ INCEP two day finish-SX away leave-SX time COMP-CN 1.I just-again see-3.II
+CCNJ run-1SG.II toward 2.M.SG CCNJ on say-1SG.II to 2.M.SG	CCNJ toward run-1SG.II LOC-3.II CCNJ on COMP say-1SG.II OBL-3.II
+POT-CN say-CN 2.SG.OBL-IRR know-CN COMP-CN happen-CN REL-CN grouse	NEG-2.I CIRC.PSBL PROSP-2.I tell-T-CN MANR LVB-CN grouse PR.EVID
+CCNJ then say-CN PROSP go.over.to-CN 2.SG.OBL mother house and PROSP 1.CNJ-CCNJ tell-CN 2.SG.OBL	CCNJ on COMP say-3.II PROSP toward arrive 1SG.III LOC-CN house-PN mother-2SG.II PROSP CCNJ-1.I tell-T-3.II OBL-2SG.II
+CCNJ go.home-1SG.II CCNJ 1.I wait-ANTIP-1SG.II OBL-3.II, CONJ after.that-3.II tell-TR-3.II 2.OBL-DAT grouse-PL-3.II	CCNJ back go.home-1SG.II CCNJ 1.I wait-ANTIP-1SG.II OBL-3.II CCNJ-3.I tell-T-CN MANR LVB-CN grouse
+CCNJ when story-tell-PASS-3SG.II CCNJ DEM.DIST say-PASS-3SG.II	CCNJ IPFV-3.I tell-T-3.II CCNJ on COMP say-3.II
+PROG hunt-1SG.II CCNJ want-PL-1PL.II get-INF DET moose	IPFV-CN hunt-ANTIP-1SG.II CCNJ want-1PL.II PREP-OBL-CN moose
+CCNJ want-CN PROSP feed-INF-1PL.II CCN-PL all PN-OBV.SG CCNJ but grouse-CN exist-PAST-3SG.III LOC path-LOC	CCNJ want-1PL.II PROSP eat-CAUS2 all 3.III-CN people CCNJ block.way sit-CN grouse
+CCNJ if move-CN PROSP 1SG.II IPFV-CN fly-TR-3.SG grouse	CCNJ IRR-SPT move-PASS-1SG.II PROSP CCNJ fly grouse
+CCNJ on say-CN COMP grouse begin-CN fly-SX-3.III-CN make-CN sound betl'a-REDUP	CCNJ on COMP say-PN Man flap flap flap flap QUOT.3SG PROSP MANR fly-CN grouse
+"""AS.SOON.AS move-CN 1.I-CCNJ"" say-CN ""AS.SOON.AS move-CN 1.I-CCNJ break-CN stick REAS-COMP-CN"""	true on COMP move-PASS-1SG.II QUOT.3SG true on COMP move-PASS-1SG.II break-CAUS2-1SG.II-CN stick
+CCNJ be.noisy-3SG.II when grouse-PL fly-PROSP-3PL.II CCNJ 1.II-ERG hear-able-3PL.III when fly-TR-3PL.III CCONJ betl'a betl'a betl'a betl'a betl'	CCNJ noisy-CN COMP-FOC-3.I fly.PL-CN grouse CCNJ on COMP fly-3PL.II CCNJ-2.I hear-3.II flap flap flap flap flap
+CCNJ COMP-CN NEG-DES move-TR-1SG.II PROSP NEG LVB-3SG.III run.away-ANTIP-3SG.III CN moose-OBLIV CN grouse PROSP exist-CN DEM.DIST-PN	CCNJ NEG-FOC want-1SG.II PROSP NMLZ move-PASS-1SG.II PROSP MANR flee.PL-CN moose hunt-ANTIP-1SG.II COMP block.way sit-CN grouse
+every time see-HAB.PRS-1SG.II PN PN CCNJ VERUM ask-TR-1SG.II him CCNJ say-3.II will-2SG.II tell-INF-2SG.II story about betl'a betl'	COMP-1.I HAB see-PN Man Jacob Brown CCNJ 1.I again ask-3.II NEG-2.I CIRC.PSBL PROSP-2.I tell-T-CN MANR LVB-CN flap flap OBL-1PL.II-Q
+CCNJ 1.I-CCNJ DEM name-TR-PASS CCNJ Man PREP-DAT Betl'a Betl'	CCNJ on COMP CAUS1-sit-DETR-ATTR CAUS1-name-T-TR-1SG.II-DM Man Betl'a Betl'
+that-CCNJ COMP-CN LVB-1SG.II name-PASS-1SG.II now Betl'a Betl'	on REAS COMP-CN name-1SG.II now PREP-PN Betl'a Betl'
+that-CN all say-1SG.II	CNT.AMT-CN say-1SG.II
