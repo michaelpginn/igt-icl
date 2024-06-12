@@ -3,6 +3,7 @@ import os
 import sys
 import random
 import time 
+import string 
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 import json
@@ -14,11 +15,12 @@ import datasets
 import fire
 from dotenv import load_dotenv
 from tqdm.autonotebook import tqdm
+import morfessor
 
 from igt_icl import (IGT, Prompt, PromptType, Retriever, evaluate_igt,
-                     gloss_with_llm)
+                     gloss_with_llm, retrieval)
 
-project_root = Path(__file__).parent.parent
+project_root = Path(__file__).resolve().parent.parent
 sys.path.append(str(project_root))
 
 
@@ -140,6 +142,21 @@ def run_experiment(glottocode: str,
     print(
         f"Lang: {language}\n# Train examples: {len(train_dataset)}\n# Eval examples: {len(eval_dataset)}")
 
+    # If needed, create silver segmented data
+    if retriever_key in ['morpheme_recall']:
+        io = morfessor.MorfessorIO()
+        morfessor_model_path = os.path.join(project_root, f"experiments/segmentation/{glottocode}.model")
+        morfessor_model = io.read_binary_model_file(morfessor_model_path)
+
+        punctuation_to_remove = string.punctuation.replace("'", "")
+        def _segment(row):
+            transcription = row['transcription'].translate(str.maketrans("", "", punctuation_to_remove))
+            row['segmentation'] = ' '.join([' '.join(morfessor_model.viterbi_segment(word.lower())[0]) for word in transcription.split()])
+            return row
+
+        train_dataset = train_dataset.map(_segment)
+        eval_dataset = eval_dataset.map(_segment)
+
     additional_data = {}
 
     # Compile the list of glosses observed in the training data, if applicable
@@ -150,11 +167,14 @@ def run_experiment(glottocode: str,
     # Create a Retriever, if applicable
     retriever = None
     if retriever_key is not None:
-        dataset_filtered = glosslm_corpus[f'train_{id_or_ood}'].filter(lambda row:
-                                                                       row['language'] == language)
-        retriever = Retriever.stock(retriever_key,
-                                    n_examples=num_fewshot_examples,
-                                    dataset=dataset_filtered)
+        if retriever_key == 'morpheme_recall':
+            retriever = retrieval.WordRecallRetriever(n_examples=num_fewshot_examples,
+                                                      dataset=train_dataset,
+                                                      transcription_key='segmentation')
+        else:
+            retriever = Retriever.stock(retriever_key,
+                                        n_examples=num_fewshot_examples,
+                                        dataset=train_dataset)
 
     run_name = f"{glottocode}.{'un' if not segmented else ''}seg.{model}.{seed}"
     log_file = open(os.path.join(
@@ -169,6 +189,8 @@ def run_experiment(glottocode: str,
         # If appropriate, run retrieval and add examples to the prompt data payload
         fewshot_examples = []
         if retriever is not None:
+            if retriever_key in ['morpheme_recall']:
+                igt.transcription = example['segmentation']
             fewshot_examples = retriever.retrieve(igt)
 
         return gloss_with_llm(igt,

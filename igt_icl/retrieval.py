@@ -84,11 +84,20 @@ class RandomRetriever(Retriever):
 class WordRecallRetriever(Retriever):
     """Selects examples that include the max number of unique words from the target, divided by the # of words in the target."""
 
+    def __init__(self,
+                 n_examples: int,
+                 dataset: Union[datasets.Dataset, str],
+                 seed: Optional[int] = None,
+                 transcription_key: str = 'transcription'):
+        super().__init__(n_examples, dataset, seed)
+        self.transcription_key = transcription_key
+
+
     def retrieve(self, example: IGT) -> List[IGT]:
         target_words = set(example.transcription.split())
 
         def _compute_recall(row):
-            row_words = set(row['transcription'].split())
+            row_words = set(row[self.transcription_key].split())
             matches = sum([1 for word in row_words if word in target_words])
             return {"recall": matches / len(target_words)}
 
