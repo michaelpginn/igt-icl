@@ -1,7 +1,8 @@
 from typing import Dict, List, Callable, Type, Union, Optional
 from abc import ABC, abstractmethod
 import datasets
-import evaluate
+from sacrebleu import CHRF
+
 from .igt import IGT
 
 datasets.utils.logging.disable_progress_bar()
@@ -61,7 +62,7 @@ class Retriever(ABC):
         if method in cls._stock_subclasses:
             return cls._stock_subclasses[method](n_examples=n_examples, dataset=dataset, seed=seed)
         else:
-            raise ValueError("fNo stock class with key {key}")
+            raise ValueError(f"No stock class with key {method}")
 
     @abstractmethod
     def retrieve(self, example: IGT) -> List[IGT]:
@@ -161,21 +162,20 @@ class MaxWordCoverageRetriever(Retriever):
 
 class chrFRetriever(Retriever):
     """Selects examples with the max chrF score to the target"""
-    chrf = evaluate.load("chrf")
+    chrf = CHRF(word_order=2)
 
     def retrieve(self, example: IGT) -> List[IGT]:
         def _compute_chrf(row):
-            chrf_score = self.chrf.compute(
-                predictions=[row['transcription']], references=[[example.transcription]], word_order=2
-            )
+            chrf_score = self.chrf.sentence_score(row['transcription'], [example.transcription]).score
             return {"chrF": chrf_score}
 
         examples = self.dataset \
-                        .shuffle(seed=self.seed) \
-                        .map(_compute_chrf, batched=False) \
-                        .sort("chrF", reverse=True) \
-                        .select(range(self.n_examples))
-        return [IGT.from_dict(ex) for ex in examples] # type: ignore
+                        .shuffle(seed=self.seed, keep_in_memory=True) \
+                        .map(_compute_chrf, batched=False, keep_in_memory=True) \
+                        .sort("chrF", reverse=True, keep_in_memory=True) \
+                        .select(range(self.n_examples), keep_in_memory=True)
+        
+        return [IGT.from_dict(ex) for ex in examples]  # type: ignore
         
 
 

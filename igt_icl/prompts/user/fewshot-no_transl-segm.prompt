@@ -1,0 +1,6 @@
+Here are some complete glossed examples:
+$fewshot_examples
+
+Please gloss the following example in $language. Output the morphological segmentation first, splitting each word into one or more morphemes with dashes. Then output the gloss line.
+
+Transcription: $transcription

@@ -92,6 +92,8 @@ def run_experiment(glottocode: str,
                    use_gloss_list: Optional[str] = None,
                    retriever_key: Optional[str] = None,
                    num_fewshot_examples: Optional[int] = None,
+                   omit_translations: bool = False,
+                   split: str = 'eval',
                    llm_type: str = 'openai',
                    model="gpt-3.5-turbo-0125",
                    temperature=0,
@@ -106,6 +108,7 @@ def run_experiment(glottocode: str,
         use_gloss_list (str, Optional): None | 'split_morphemes_and_fusional' | 'split_morphemes'
         retriever_key (Callable[[Dict, datasets.DatasetDict], List[Dict]]): If provided, a function for retrieving similar examples for few-shot prompts. Defaults to None.
         num_fewshot_examples (int, optional): The number of examples to include if a retrieval strategy has been selected.
+        omit_translations (bool): If true, fewshot examples and prompts won't include translations.
         llm_type (str): 'openai' | 'local'
         model (str, optional): The API model to use. Defaults to "gpt-3.5-turbo-0125".
         temperature (int, optional): Defaults to 1.
@@ -136,7 +139,7 @@ def run_experiment(glottocode: str,
     glosslm_corpus = glosslm_corpus.filter(lambda row: row["is_segmented"] == "yes" if segmented else row["is_segmented"] == "no")
     train_dataset = glosslm_corpus[f"train_{id_or_ood}"].filter(
         lambda row: row['glottocode'] == glottocode)
-    eval_dataset = glosslm_corpus[f"eval_{id_or_ood}"].filter(
+    eval_dataset = glosslm_corpus[f"{split}_{id_or_ood}"].filter(
         lambda row: row['glottocode'] == glottocode)
     language = eval_dataset['language'][0]
     print(
@@ -192,6 +195,10 @@ def run_experiment(glottocode: str,
             if retriever_key in ['morpheme_recall']:
                 igt.transcription = example['segmentation']
             fewshot_examples = retriever.retrieve(igt)
+
+            if omit_translations:
+                for ex in fewshot_examples:
+                    ex.translation = None
 
         return gloss_with_llm(igt,
                               system_prompt=Prompt.stock(

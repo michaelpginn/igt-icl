@@ -1,5 +1,7 @@
 from typing import Dict, Union, List, Tuple, Optional
 from openai import OpenAI
+import vertexai
+from vertexai.generative_models import GenerativeModel, GenerationConfig, HarmCategory, HarmBlockThreshold
 import cohere
 import re
 import os
@@ -52,6 +54,48 @@ def _run_openai_prompt(hydrated_system_prompt: str,
     tokens = completion.usage.total_tokens if completion.usage is not None else -1
 
     return completion.choices[0].message.content or "Error", tokens
+
+
+def _run_google_prompt(hydrated_system_prompt: str,
+                       hydrated_prompt: str,
+                       model="gemini-1.5-pro",
+                       temperature=0,
+                       seed=0,
+                       verbose=False) -> Tuple[str, int]:
+    """Runs a specified system prompt and user prompt using the Google API.
+
+    Args:
+        system_prompt (str): A (hydrated) system prompt
+        prompt (str): A (hydrated) user prompt.
+        api_key (str): Google API key
+        model (str): The model name. Check [the documentation](https://platform.openai.com/docs/models/gpt-4-and-gpt-4-turbo)
+        temperature (int, optional): Defaults to 1.
+        seed (int, optional): Defaults to 0.
+        verbose (bool, optional): If true, log information about the LLM response. Defaults to True.
+
+    Returns:
+        Tuple[str, int]: The LLM chat completion and number of tokens used.
+    """
+    vertexai.init(project="autoigt", location="us-central1")
+
+    model = GenerativeModel(model_name="gemini-1.5-pro-001", 
+                            system_instruction=[hydrated_system_prompt],
+                            generation_config=GenerationConfig(temperature=temperature, top_p=1))
+    response = model.generate_content(hydrated_prompt, safety_settings={
+        HarmCategory.HARM_CATEGORY_HATE_SPEECH: HarmBlockThreshold.BLOCK_NONE,
+        HarmCategory.HARM_CATEGORY_HARASSMENT: HarmBlockThreshold.BLOCK_NONE,
+        HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT: HarmBlockThreshold.BLOCK_NONE,
+        HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT: HarmBlockThreshold.BLOCK_NONE,
+        HarmCategory.HARM_CATEGORY_UNSPECIFIED: HarmBlockThreshold.BLOCK_NONE,
+    })
+
+    try:
+        return response.text, response.usage_metadata.total_token_count
+    except Exception as e:
+        print(e)
+        print(response)
+        return "", 0
+    
 
 
 def _run_cohere_prompt(hydrated_system_prompt: str,
@@ -129,7 +173,8 @@ def _parse_response(response: str) -> Union[str, List[str]]:
     response_pattern = r"Glosses: (.*)(\n|$)"
     matches = re.findall(response_pattern, response, re.M)
     if len(matches) == 0:
-        raise LLMResponseError("Response was not in correct format")
+        return ""
+        # raise LLMResponseError("Response was not in correct format")
     if len(matches) > 1:
         return [match[0] for match in matches]
     else:
@@ -156,7 +201,7 @@ def gloss_with_llm(example: IGT,
         prompt (prompts.Prompt): A prompt to run
         additional_data (Dict): A dictionary containing additional fields to fill into the prompt
         fewshot_examples (List[igt.IGT]): A list of examples to include as few-shots, for relevant prompts
-        llm_type (str): 'openai' | 'cohere' | 'local'. Defaults to 'openai'.
+        llm_type (str): 'openai' | 'cohere' | 'google' | 'local'. Defaults to 'openai'.
         model (str, optional): Name of the model to use. Defaults to 'gpt-3.5-turbo-0125'.
         temperature (int, optional): Defaults to 0.
         log_file: (TextIOWrapper, optional): If provided, a file to write logs to. 
@@ -188,6 +233,14 @@ def gloss_with_llm(example: IGT,
         response, num_tokens_used = _run_openai_prompt(hydrated_system_prompt=hydrated_system_prompt,
                                                        hydrated_prompt=hydrated_prompt,
                                                        api_key=api_key,
+                                                       model=model,
+                                                       temperature=temperature,
+                                                       seed=seed,
+                                                       verbose=verbose)
+    elif llm_type == 'google':
+        assert api_key is not None
+        response, num_tokens_used = _run_google_prompt(hydrated_system_prompt=hydrated_system_prompt,
+                                                       hydrated_prompt=hydrated_prompt,
                                                        model=model,
                                                        temperature=temperature,
                                                        seed=seed,

@@ -14,7 +14,9 @@ from torchtext.data.metrics import bleu_score
 def _strip_gloss_punctuation(glosses: str):
     """Strips any punctuation from gloss string (assuming it is surrounded by spaces)"""
     try:
-        return re.sub(r"(\s|^)[^\w\s](\s|$)", " ", glosses).strip()
+        glosses = re.sub(r"(\s|^)[^\w\s](\s|$)", " ", glosses).strip()
+        glosses = re.sub(r"(\w)-(\s|$)", r"\1\2", glosses)
+        return glosses
     except:
         return ""
 
@@ -93,7 +95,7 @@ def _eval_stems_grams(pred: List[List[str]], gold: List[List[str]]) -> dict:
         "prec": 0
         if perf["gram"]["pred"] == 0
         else perf["gram"]["correct"] / perf["gram"]["pred"],
-        "rec": perf["gram"]["correct"] / perf["gram"]["gold"],
+        "rec": 1 if perf["gram"]["gold"] == 0 else perf["gram"]["correct"] / perf["gram"]["gold"],
     }
     if (gram_perf["prec"] + gram_perf["rec"]) == 0:
         gram_perf["f1"] = 0
