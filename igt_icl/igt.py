@@ -7,8 +7,8 @@ class IGT:
     transcription: str
     translation: Optional[str]
     language: str
-    metalang: Optional[str]
-    glosses: Optional[str]
+    metalang: Optional[str] = None
+    glosses: Optional[str] = None
 
     def __str__(self) -> str:
         s = f"Transcription: {self.transcription}"
