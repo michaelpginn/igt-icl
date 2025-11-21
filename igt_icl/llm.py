@@ -1,8 +1,4 @@
 from typing import Dict, Union, List, Tuple, Optional
-from openai import OpenAI
-import vertexai
-from vertexai.generative_models import GenerativeModel, GenerationConfig, HarmCategory, HarmBlockThreshold
-import cohere
 import re
 import os
 from io import TextIOWrapper
@@ -35,6 +31,7 @@ def _run_openai_prompt(hydrated_system_prompt: str,
     Returns:
         Tuple[str, int]: The LLM chat completion and number of tokens used.
     """
+    from openai import OpenAI
     client = OpenAI(api_key=api_key)
     completion = client.chat.completions.create(
         model=model,
@@ -76,6 +73,8 @@ def _run_google_prompt(hydrated_system_prompt: str,
     Returns:
         Tuple[str, int]: The LLM chat completion and number of tokens used.
     """
+    import vertexai
+    from vertexai.generative_models import GenerativeModel, GenerationConfig, HarmCategory, HarmBlockThreshold
     vertexai.init(project="autoigt", location="us-central1")
 
     model = GenerativeModel(model_name="gemini-1.5-pro-001", 
@@ -119,6 +118,7 @@ def _run_cohere_prompt(hydrated_system_prompt: str,
     Returns:
         Tuple[str, int]: The LLM chat completion and number of tokens used.
     """
+    import cohere
     client = cohere.Client(api_key=api_key)
 
     try:

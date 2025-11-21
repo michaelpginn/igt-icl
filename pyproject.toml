@@ -1,0 +1,23 @@
+[project]
+name = "igt-icl"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = [
+    "evaluate>=0.4.6",
+    "jiwer>=4.0.0",
+    "pandas>=2.3.3",
+    "sacrebleu>=2.5.1",
+    "torch==2.3.0",
+    "torchtext>=0.18.0",
+]
+
+[dependency-groups]
+cohere = [
+    "cohere>=5.20.0",
+]
+openai = [
+    "openai>=2.8.1",
+]
+vertex = [
+    "vertexai>=1.71.1",
+]

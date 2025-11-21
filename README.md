@@ -15,14 +15,14 @@ example = IGT(transcription='los gatos corren',
               language='Spanish',
               metalang='English')
 
-glosses, number_of_tokens = gloss_with_llm(example,
+response = gloss_with_llm(example,
                                            system_prompt=Prompt.stock('base', PromptType.SYSTEM),
                                            prompt=Prompt.stock('zeroshot', PromptType.USER),
                                            llm_type='openai',
                                            model='gpt-3.5-turbo-0125',
                                            api_key='your_key_here')
 
-print(glosses) # "DET.PL cat.PL run.3PL"
+print(response['response']) # "DET.PL cat.PL run.3PL"
 ```
 
 ### Stock Prompts
